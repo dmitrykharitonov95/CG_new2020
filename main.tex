@@ -15,7 +15,7 @@
 \usepackage{titlesec}
 \usepackage{cite}
 \usepackage[dvipsnames]{xcolor}
-%\titleformat{\section}[block]{\normalfont\large\bfseries\centering}{\thesection}{1ex}{}
+%\titleformat{\section*}[block]{\normalfont\large\bfseries\centering}{\thesection}{1ex}{}
 \usepackage[margin=9pt,labelsep=period,font=small,figurename=Fig.]{caption}
 %\usepackage[export]{adjustbox}
 \usepackage{enumerate}
@@ -30,7 +30,7 @@
 %\renewcommand{\theparagraph}{}
 \newtheorem{theorem}{Theorem}
 \author{Vyacheslav A. Trofimov\textsuperscript{1}, Dmitry M. Kharitonov\textsuperscript{2}, Mikhail V. Fedotov\textsuperscript{2}}
-\title{THG based on induced cubic nonlinear response due to cascading SHG}
+\title{THG based on induced cubic non-linear processes  due to cascading SHG}
 
 \date{\textsuperscript{1} South China University of Technology, Guangzhou 510641, China\\
 \textsuperscript{2}Lomonosov Moscow State University, Leninskye Gory, Moscow 119992, Russia}
@@ -39,41 +39,44 @@
 % \centerline{Lomonosov Moscow State University, Leninskye Gory, Moscow 119992, Russia}
 % \end{large}
 \section*{Abstract}
-As it is well-known, a problem of the optical frequency conversion \textcolor{red}{ attracts a permanent attention of researchers because of wide application of this phenomenon. In particular, the effective third harmonic generation (THG) is achieved by using  consecutive generation of  the second harmonic generation (SHG) and a wave with the sum frequency in two crystals with the quadratic nonlinear response.  The trebled frequency of high intensive laser pulse can be generated  in a medium with a cubic nonlinear response. However, the frequency conversion achievable efficiency is low essentially in this case.}
 
+As well-known, a problem of the effective THG is of interest because of its wide application. Till present time, the highest efficiency of frequency tripling is achieved by using  consecutive generation of  the SHG and a wave with the sum frequency using two crystals with the quadratic nonlinear response. 
 
+We propose to use the cascading SHG for manifestation of the frequency conversion processes inherent a medium, possessing cubic susceptibility. Based on multi-scale method, the modified equations describing frequency tripling process are derived from a set of the  Schr\"{o}dinger equations describing three-waves interaction with the frequencies  \(\omega,\,2\omega,\,3\omega\) in a medium with quadratic susceptibility.  The derived equations are solved analytically in the frame-work of long pulse  duration approximation and plane wave approximation without using the fundamental wave energy non-depletion approximation. An achievement of THG efficiency being equal to $94.5\%$ is demonstrated. A possibility of highly intense THG is shown for both cases of the phase mismatching between second harmonic and fundamental wave. Choice of its sign allows one to avoid developing modulation instability. Analytical solution is confirmed by computer simulation results.
 
-\textcolor{red}{
-Another process, accompanying appearance of the pulse (or beam) self-action, is the cascading SHG.  This phenomenon have been investigated early both theoretically and experimentally. Below we demonstrate that the cascading SHG leads also to appearance of the effective (induced) cubic nonlinear response in a medium with the quadratic susceptibility. Based on multi-scale method, the modified equations describing frequency tripling process are derived from a set of the    Schr\"{o}dinger equations describing three-waves interaction with the frequencies \(\omega,\,2\omega,\,3\omega\).  The obtained equations are solved analytically in the frame-works of long pulse  duration approximation and plane wave approximation without using the basic wave  energy non-depletion approximation.}
-\textcolor{red}{Буду еще дописывать abstract}.   
-
-\section{Introduction}
-The cascaded \(\chi^{(2)}\) nonlinear phenomenon remains of interest for many years due to its various practical applications. For the first time, this phenomena has been theoretically predicted in 1974 by A.P. Sukhorukov and Yu.N. Karamzin \cite{bib:n1}. Since 1991 there is a permanent unterest to this phenomenon. So, in 1994, a physical experiment was made by a group of Torruellas \cite{bib:n2}. Then, many researchers have predicted and observed various types of cascading \(\chi^{(2)}\) solitons, in particular, 1D spatial \(\chi^{(2)}\) solitons \cite{bib:n3}, and 2D spatial \(\chi^{(2)}\) solitons \cite{bib:n2, bib:n4, bib:n5}, and \(\chi^{(2)}\) temporal solitons \cite{bib:n6}, and spatio-temporal solitons\cite{bib:n7} and others \cite{bib:n9,bib:n10}. Paper \cite{bib:n8}, for example, contains the comprehensive review of observing the cascading \(\chi^{(2)}\) solitons and their practical applications. 
+\section*{Introduction}
+The cascaded \(\chi^{(2)}\) nonlinear phenomenon remains of interest for many years due to its various practical applications. For the first time, this phenomena has been theoretically predicted in 1974 by A.P. Sukhorukov and Yu.N. Karamzin \cite{bib:n1}. Since 1991 there is a permanent interest \ to this phenomenon. So, in 1994, a physical experiment was made by a group of Torruellas \cite{bib:n2}. Then, many researchers have predicted and observed various types of cascading \(\chi^{(2)}\) solitons, in particular, 1D spatial \(\chi^{(2)}\) solitons \cite{bib:n3}, and 2D spatial \(\chi^{(2)}\) solitons \cite{bib:n2, bib:n4, bib:n5}, and \(\chi^{(2)}\) temporal solitons \cite{bib:n6}, and spatio-temporal solitons\cite{bib:n7} and others \cite{bib:n9,bib:n10}. Paper \cite{bib:n8}, for example, contains the comprehensive review of observing the cascading \(\chi^{(2)}\) solitons and their practical applications. 
 
 One of the cascading SHG applications is the soliton compression \cite{bib:n11, bib:n12, bib:n13, bib:n14, bib:n15, bib:n16, bib:n17, bib:n18}. By choosing the appropriate sign of the phase mismatching, the pulse compression at the fundamental frequency (FF) can be reached. This phenomenon is also of interest nowadays. So, in \cite{bib:n11}, a soliton compression factor about of \(173.52\) is achieved. M. Bache and F.W. Wise have discussed in \cite{bib:n12} the soliton compression at the wavelength \(1030\,nm\) in a LiNbO$_3$ crystal, which length being equal to \(10\,cm\). In \cite{bib:n13} the pulse compression is obtained at the incident pulse with peak power density \(20\,GW/cm^2\). In \cite{bib:n14} such a pulse compression is observed BBO crystal with its length about of \(3\,cm\). 
 
-Big phase mismatching between \textcolor{red}{  waves at the FF and the doubled frequency} may lead to self-focusing or defocusing of the beam at the FF, as it was shown in \cite{bib:n19}. In the axial-symmetric case, the beam intensity may be increased about 70 times \cite{bib:n20}. Another important application of the cascading SHG is its using for \textcolor{red}{  suppressing random fluctuations of both durations and  maximal power densities of pulses generated by  laser operating in the so-called free-generation mode \cite{bib:n21,bib:n22,bib:n23a,bib:n23}  because a frequency conversion of these sub-pulses possesses a low efficiency arising from fluctuations of their maximal intensity. We stress that only about \(2\%-3\%\) of the incident energy is lost  at suppressing those fluctuations.}
 
-\textcolor{red}{Thus, observing phenomena inherent in  the Kerr effect, in a medium with the quadratic susceptibility in the case of a realization of the cascading SHG  was in many papers. However, all authors mentioned above have taken into account the phase self-modulation only for the laser pulse at the FF.
-However, cascading SHG induces a response similar cubic susceptibility and it may  lead to THG if the corresponding phase matching occurs. Indeed, let us suppose that the incident fundamental wave intensity is high enough for manifesting the quadratic nonlinear response of a medium but not remarkable for manifesting of effects corresponding to the third-order susceptibility. At a big phase mismatching between waves with the doubled frequency and FF, the SH intensity remains low, but  THG (\(\omega_3=3\omega\)) may be observed if the phase matching between fundamental wave (FW) and a wave at trebled frequency occurs.
-To analyse and understand the properties of THG  we firstly state the problem of three-wave interaction with the frequencies \(\omega,\,2\omega,\,3\omega \)  and then derive the modified equations, describing the frequency tripling process by using the multi-scale method (see, for example, \cite{bib:n24}) similar to that presented in \cite{bib:n19}. These   equations contain  terms  (the induced cubic nonlinear response) responsible for THG. The theoretical results are confirmed by computer simulation results obtained using a full set of Schr\"{o}dinger equations describing three-wave interaction with these frequencies. They show that the modified equations approximate the original ones with high precision.}
+Big phase mismatching between waves at the FF and the doubled frequency may lead to self-focusing or defocusing of the beam at the FF, as it was shown in \cite{bib:n19}. In the axial-symmetric case, the beam intensity may be increased about 70 times \cite{bib:n20}. Another important application of the cascading SHG is its using for suppressing random fluctuations of both duration and  maximal power density of pulses generated by  laser operating in the so-called free-generation mode \cite{bib:n21,bib:n22,bib:n23a,bib:n23}  because a frequency conversion of these sub-pulses possesses a low efficiency arising from fluctuations of their maximal intensity. We stress that only about \(2\%-3\%\) of the incident energy is lost  at suppressing those fluctuations.
 
-To evaluate the proposed method of the frequency trebling, it is necessary to discuss available  well-known modern schemes of the THG. There are some ways for achieving  high efficient THG. The most common way consists in a scheme with two nonlinear crystals. The first one is used for the phase-matched SHG, and the second one -  for a phase-matched sum frequency wave generation (SFG).\textcolor{red}{   Как заводится излучение основной волны во второй кристал? Импульс или пучок? Нужно везде напиать параметры.Я это уже говорил.  }.The conversion efficiency in physical experiments achieves  $80\%$ \cite{bib:t4a,bib:t4}.   High-efficient THG can also be achieved in a single crystal.  The FW pulse with duration  $40\,ps$ and a beam  diameter $10\,mm$ falls on the nonlinear crystal, in which the SH is generated. The BW energy is changed  from $0.5$ to $4.5\,mJ$. Then, a quarter-wave plate is used for changing SH wave polarization: this is necessary for achieving  phase matching at SFG process. After that, the  FW and SH waves are reflected by the mirror and pass the same crystal, in which THG occurs.   \textcolor{red}{Отражается тот же импульс основной волны или другой? Непонятно. Сколько преобразуется во вторую гармонику? Какие размеры кристалла? }. We stress that the beam with enough big diameter is used in this experiment to avoid an influence of its diffraction.  THG is realized also in a single BBO crystal with combined (quadratic and cubic) nonlinear response \textcolor{red}{приведите параметры} \cite{bib:t1}. Another technique of the trebled frequency  generation is based on using Quasi-Periodic Optical Superlattice (QPOS) \cite{bib:t2}.   The maximum frequency conversion achievable in this generation schemes is about $30\%$-$40\%$.
+Thus, observing of phenomena inherent in  the Kerr effect in a medium with the quadratic susceptibility at the cascading SHG (for brevity, we will name this as induced cubic non-linearity or susceptibility) was in many papers. Herewith, all authors mentioned above have taken into account the phase self-modulation only for the laser pulse at the FF. However, cascading SHG induces a response similar cubic susceptibility and it may  lead to THG if the corresponding phase matching occurs. Indeed, let us suppose that the incident fundamental wave (FW) intensity is high enough for manifesting the quadratic nonlinear response of a medium but not remarkable for manifesting of effects corresponding to the third-order susceptibility. At a big phase mismatching between waves with the doubled frequency and FF, the SH intensity remains low, but  THG (\(\omega_3=3\omega\)) may be observed if the phase matching between FW and a wave at trebled frequency occurs.
 
-The advantages of approach, proposed below, are, in particular, the following. First, only one nonlinear crystal is required for effective frequency tripling and in contrast to \cite{bib:t4}, the changing  electric field polarization at the SH wave is not required because the phase matching between TH and FW is required only. The SH intensity is very low (about $2\%$ - $3\%$ or less that is comparable with losses at the mirror used in \cite{bib:t4a,bib:t4}) and the FW energy converts mostly to TH one. Secondly, the frequency conversion scheme under consideration can be applied directly for femtosecond pulses without a synchronization between  FW and SH  in contrast to \cite{bib:t5}, where a time pre-delayer was used to compensate the group velocity mismatching (GVM) between FW and SH. Thirdly, the high efficiency THG can be observed even for rather low intensity (about \(1\,GW/cm^2\) and low) of the incident pulse at FF with big duration: picosecond or  nanosecond or  even microsecond duration to minimize an  influence of the GVM  and the second-order dispersion (SOD) on the frequency up-conversion because the induced cubic susceptibility is much greater than the own susceptibility of the third order.
-Fourthly, the frequency conversion based on cascading SHG accompanies by cross- and self-modulation of the TH wave and this leads to broadening of its spectrum. Obviously, it is very important for practice because it leads to possibility of additional compressing of the pulse. On the other hand, the terms responsible for the pulse compression differs in favorable way in comparison with THG in a medium with own third order susceptibility. 
-Fifthly,  frequency trebling developing scheme can be applied for a medium possessing quadratic and cubic nonlinear response and it allows us to compensate partly a negative influence of the self- and cross-modulation caused by own third order susceptibility. 
+To evaluate the proposed method of the frequency trebling, it is necessary to discuss available  well-known modern schemes of the THG. There are some ways for achieving  high efficient THG. The most common way consists in a scheme with two nonlinear crystals. The first one is used for the phase-matched SHG, and the second one -  for a phase-matched sum frequency wave generation (SFG).  Using this scheme, the conversion efficiency, being equal $80\%$,  is achieved in physical experiments  \cite{bib:t4a,bib:t4}. For this aim, two Type II KDP crystals were used, each $70\, mm$ diameter and 12 mm thick, polished to a flatness of
+$\lambda/4$ at $0.5\mu m$ with a wedge of 7 arcsec.  Another technique of the trebled frequency  generation is based on using Quasi-Periodic Optical Superlattice (QPOS) \cite{bib:t2}.   The maximum frequency conversion achievable in this generation schemes is about $30\%$-$40\%$.
 
-\textcolor{red}{ Опишите структуру статьи, где и что исследовано  получено.}.
+High-efficient THG (about $40\%$ ) can also be achieved in a single crystal \cite{bib:t3}  The FW pulse with duration  $40\,ps$ and a beam  diameter $10\,mm$ falls on the nonlinear crystal ( $20\,mm \cdot 20\,mm \cdot 10\,mm $ KDP crystal, for definiteness), in which the SH is generated. The FW  energy is changed  from $0.5$ to $4.5\,mJ$. Then, a quarter-wave plate is used for changing SH wave polarization: this is necessary for achieving  phase matching at SFG process. After that, the  FW and SH waves, passed through the crystal,  are reflected by the mirror and propagate in the same crystal, in which the THG occurs.  We stress that the beam with enough big diameter is used in this experiment to avoid an influence of its diffraction.  
 
-Цe provide another computer simulation results of frequency tripling. Highly intensive THG is achieved for both positive and negative phase mismatching between SH and FW. At the negative sign of the phase mismatching, the MI may appear, and as a result of this, a dramatic decreasing of the THG efficiency occurs. Nevertheless, at the beginning stage of the MI, a regular sequence of very short sub-pulses with self-similar shapes may appear.
+THG is realized also in a single BBO crystal with combined (quadratic and cubic) nonlinear response  \cite{bib:t1}, in which the phase matching for the frequency tripling occurs, and the SHG and SFG processes occur without phase matching. However, there are some peculiarities that differs this paper from our current paper. So, the incident pulse power density is enough high (\(50\,GW/cm^2\) and higher). Therefore, the third order susceptibility influences the frequency conversion process. It results in presence of cross- and self phase-modulation of optical pulse that is limiting the THG efficiency.  The  frequency trebling based on our scheme allows us to compensate partly a negative influence of the self- and cross-modulation caused by own third order susceptibility because of cascading processes. 
 
-\section{PROBLEM STATEMENT}
+It is necessary to emphasize that the BBO crystal length in those physical experiments is equal to \(1\,mm\), which is too small to observe a high efficiency of THG in our case under consideration. We also note that the theoretical analysis was provided in the framework of the FW intensity non-depletion approximation. In turn, we propose a new approach for theoretical analysis, which is free of this approximation. 
 
-To clarify our scheme of the frequency trebling let us consider the following frequency conversion processes, depicted schematically in Fig. \ref{fr:match} for a crystal with quadratic (\(\chi^{(2)}\)) and cubic (\(\chi^{(3)}\))  susceptibilities. \textcolor{red}{A}  symbol \(\omega\) denotes  the FW frequency. 
-Thus, we consider three processes \textcolor{red}{producing a wave with trebled frequency.} 
+In frequency conversion scheme proposed below is used one nonlinear crystal with quadratic nonlinear response. However, in  contrast to \cite{bib:t4} the changing  electric field polarization at the SH wave is not required because we need only the phase matching between TH and FW. The SH intensity is very low (about $2\%$ - $3\%$ or less that is comparable with losses at the mirror \cite{bib:t4a,bib:t4}) and the FW energy converts mostly to TH one. Secondly, our scheme can be applied directly for femtosecond pulses without a synchronization between  FW and SH \cite{bib:t5}, where a time pre-delayer was used to compensate the group velocity mismatching (GVM) between FW and SH. 
 
-First process is a generation of an optical wave with doubled frequency (\(\omega+\omega=2\omega,\,\chi^{(2)}\)), and simultaneously THG based on the SFG (\(\omega+2\omega=3\omega,\,\chi^{(2)}\)) due to quadraic non-linear response of a crystal. The second one is directly the trebled frequency wave generation \(\chi^{(3)}_{cas}\) \textcolor{red}{ due to cubic non-linearity of a crystal. In comparison with the frequency doubling process this process requires  more intensive  incident pulse }. The third (new) process of the frequency tripling is based on the frequency doubling at big mismatching, \textcolor{red}{and this process can occur at low intensity of the incident wave in comparison of those occurring at own cubic non-linearity of a crystal}. This process is denoted as \(\omega\rightarrow3\omega\) with symbol \(\chi^{(3)}_{cas}\).   In Fig. \ref{fr:match} we also depict another frequency conversion processes (\(3\omega=2\omega+2\omega-\omega,\,\chi^{(3)}\)), which is taken into account by us. \textcolor{red}{Each of these frequency conversion processes is accompanied by own phase matching and own value of crystal susceptibility at the corresponding frequencies.Therefore, the susceptibilities \(\chi^{(3)}\) and  \(\chi^{(3)}_{cas}\) are different.} As a rule, only one of various conversion processes can occur at phase matching: in Fig. \ref{fr:match} this process is THG ($\chi^{(3)}$).
+While the two-crystal scheme requires the ideal ratio between the FW and SH intensities in the input section of the second crystal (it must be equal to ratio as $1:2$), our scheme is free from this demand. THG based on cascading mechanism  allows on to observe thee its high efficiency even for rather low intensity (about \(1\,GW/cm^2\) and low) of the incident pulse at FF with big duration: picosecond or  nanosecond or  even microsecond duration to minimize an  influence of the GVM  and the second-order dispersion (SOD) on the frequency up-conversion because the induced cubic susceptibility is much greater than the own susceptibility of the third order.
+Because  the THG based on cascading SHG accompanies by  cross -modulation of the trebled frequency that leads to broadening of its spectrum. Therefore, one can additionally compress of the pulse. In the scheme using only quadratic nonlinear response, such a possibility is absent.  On the other hand, the terms in equations responsible for the pulse broadening of TH spectrum  differ from those occurring in a medium with own third order susceptibility. 
+
+Our paper is organized as follows. We start from the set of Schr\"{o}dinger equations, which describes three-waves  interaction (FW, SH and TH) in a medium with quadratic and cubic non-linear response. Let's notice that the accounting for cubic non-linearity is used only for proving of inducing  cubic susceptibility in a medium with quadratic non-linear response due to the cascading SHG. The last  process is mainly attracted our attention, and,  we demonstrate an appearance of induced  cubic susceptibility  on the base of multi-scale method (see, for example, \cite{bib:n24}) similar to that presented in \cite{bib:n19}. Then we prove it  by testing  several cases of waves-interaction.  With this aim, the analytical solution of the modified problem, obtained by using multi-scale method, is derived. An influence of the phase mismatching between interacting waves on the THG efficiency is examined  theoretically in long pulse duration approximation.
+
+The computer simulation is made in the last part of the paper. So, firstly,  the analytical solution is confirmed without accounting for SOD of the pulses. Then, the THG efficiency  of pulses undergoing SOD  influence is analyzed. Developing of the MI is analyzed by computer simulation in Supplementary Information. 
+
+\section*{PROBLEM STATEMENT}
+
+To clarify our scheme of the frequency trebling let us consider the following frequency conversion processes, depicted schematically in Fig. \ref{fr:match} for a crystal with quadratic (\(\chi^{(2)}\)) and cubic (\(\chi^{(3)}\))  susceptibilities. A  symbol \(\omega\) denotes  the FW frequency. Thus, we consider three processes producing a wave with trebled frequency. 
+
+First process is a generation of an optical wave with doubled frequency (\(\omega+\omega=2\omega,\,\chi^{(2)}\)), and simultaneously THG based on the SFG (\(\omega+2\omega=3\omega,\,\chi^{(2)}\)) due to quadratic non-linear response of a crystal. The second one is directly the trebled frequency wave generation \(\chi^{(3)}_{cas}\)   due to cubic non-linearity of a crystal. In comparison with the frequency doubling process this process requires  more intensive  incident pulse. The third (new) process of the frequency tripling is based on the frequency doubling at big mismatching, and this process can occur at low intensity of the incident wave in comparison of those occurring at own cubic non-linearity of a crystal. This process is denoted as \(\omega\rightarrow3\omega\) with symbol \textcolor{red}{ \(\chi^{(3)}_{cas}\)} \textcolor{ForestGreen}{$\chi^{(3)}$}. In Fig. \ref{fr:match} we also depict another frequency conversion processes (\(3\omega=2\omega+2\omega-\omega,\,\chi^{(3)}\)), which is taken into account by us. Each of these frequency conversion processes is accompanied by own phase matching and own value of crystal susceptibility at the corresponding frequencies. Therefore, the susceptibilities \(\chi^{(3)}\) and  \(\chi^{(3)}_{cas}\) are different. As a rule, only one of various conversion processes can occur at phase matching: in Fig. \ref{fr:match} this process is THG ($\chi^{(3)}$).
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{Matching2}
@@ -82,24 +85,22 @@ First process is a generation of an optical wave with doubled frequency (\(\omeg
 \end{figure}
 We suppose that the angle range for achieving the phase matching of the corresponding generation process is small enough to avoid its overlapping with phase matching angle range of other processes. In this case, it is possible to differ the process of THG, which occurs due to the SFG process, and due to the cascading SHG.
 
-Starting from \textcolor{red}{the} Maxwell's equations,  one can derived the following set of dimensionless Schr\"{o}dinger equations with respect to slowly varying envelopes of the wave packets:
+Starting from the Maxwell's equations,  one can derived the following set of dimensionless Schr\"{o}dinger equations with respect to slowly varying envelopes of the wave packets: 
 \begin{equation}
 \label{eq:ref1}
 \begin{aligned}
-&L_jA_j+i\frac{\partial F}{\partial A_j^*}+iF_{selj}(A_1,\,A_2,\,A_3)=0,\,0< z \leq L_z , 0<t<L_t,\\
+&L_jA_j+ij\frac{\partial F}{\partial A_j^*}+iF_{selj}(A_1,\,A_2,\,A_3)=0,\,0< z \leq L_z , 0<t<L_t,\\
 &L_j=\frac{\partial}{\partial z}+\nu_{j1}\frac{\partial}{\partial t}+iD_j\frac{\partial^2}{\partial t^2},\\
-&F=\gamma_1({A_1^*}^2A_2e^{-i\Delta_{21} kz}+A_1^2A_2^*e^{i\Delta_{21} kz})+\gamma_2 (A_1^*A_2^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\\
-+&A_1A_2A_3^*e^{i(\Delta_{31}k-\Delta_{21}k)z})+\alpha_1({A_1^*}^3 A_3 e^{-i\Delta_{31}kz}+A_1^3 A_3^* e^{i\Delta_{31}kz})\\
+&F=\frac{\gamma_1}{2}({A_1^*}^2A_2e^{-i\Delta_{21} kz}+A_1^2A_2^*e^{i\Delta_{21} kz})+\gamma_2 (A_1^*A_2^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\\
++&A_1A_2A_3^*e^{i(\Delta_{31}k-\Delta_{21}k)z})+\frac{\alpha_1}{3}({A_1^*}^3 A_3 e^{-i\Delta_{31}kz}+A_1^3 A_3^* e^{i\Delta_{31}kz})\\
 +&\alpha_2(A_1^*A_2^2 A_3^*e^{-i(2\Delta_{21}k-\Delta_{31}k )z}+A_1{A_2^*}^2 A_3e^{i(2\Delta_{21}k-\Delta_{31}k )z}),\\
 &F_{selj}=j\alpha_3 A_j(2\sum\limits_{k=1}^3 |A_k|^2-|A_j|^2), j=1,\,2,\,3, \nu_{11}=0,\\
 \end{aligned}
 \end{equation}
 which describes the optical frequency tripling in a medium with combined nonlinear response in the frame-work of the plane wave approximation (without taking into account a laser beam diffraction). 
-Here \(A_1,\,A_2\) and \(A_3\) are the complex amplitudes of waves with the basic frequency (\(\omega\)), and the doubled frequency (\(2\omega\)), and the tripled frequency (\(3\omega\)), respectively, normalized at \(A_{01}=\sqrt{I_{01}}\) (a square root of the \textcolor{red}{ incident pulse maximal intensity} at the FF). Parameter \(\gamma_j\) is the interacting waves coupling coefficient  due to the quadratic non-linear response at the corresponding frequencies. \textcolor{red}{ In general case, this coefficient may be different for various generation processes. However, for simplicity, we choose the same value (\(\gamma_j=\gamma\)) for all these processes involving in equations \eqref{eq:ref1}. Parameters \(\alpha_j\) depend on frequencies and characterize the cubic non-linear response of a medium responsible  for self-  and cross-modulation of the interacting waves as well as  the THG process.} 
+Here \(A_1,\,A_2\) and \(A_3\) are the complex amplitudes of waves with the FF (\(\omega\)), and the doubled frequency (\(2\omega\)), and the tripled frequency (\(3\omega\)), respectively, normalized at \(A_{01}=\sqrt{I_{01}}\) (a square root of the incident pulse maximal intensity at the FF). Parameter \(\gamma_j\) is the interacting waves coupling coefficient  due to the quadratic non-linear response at the corresponding frequencies.  In general case, this coefficient may be different for various generation processes. However, for simplicity, we choose the same value (\(\gamma_j=\gamma\)) for all these processes involving in equations \eqref{eq:ref1}. Parameters \(\alpha_j\) depend on frequencies and characterize the cubic non-linear response of a medium responsible  for self-  and cross-modulation of the interacting waves as well as  the THG process. 
 
-\textcolor{red}{Далее некоторый кусок не  исправлен}
-
-Further, for simplicity, we will suppose that all coefficients \(\alpha_j\) are also the same: \(\alpha_j=\alpha\). Parameter \(\Delta_{21} k=k_2 - 2k_1\)  characterizes the phase mismatching on the length $Z_n=1\,mm$, in which units a longitudinal coordinate $z$ is measured at the SHG. \(k_1\) and \(k_2\) denote dimensionless wavenumbers for waves with the FF and doubled frequency. Parameter \(\Delta_{31} k=k_3 - 3k_1\) characterizes the phase mismatching on $Z_n$ at THG. \(k_3\) denotes dimensionless TH wavenumber. Coordinate \(t\) is a time, measured in units of the pulse duration \(\tau_P\) at the FF. Parameters \(\nu_{21}\) and \(\nu_{31}\) characterize dimensionless GVM between SH and FW, and TH and FW, respectively. Parameters \(D_{j}, j=1,2,3\) characterize dimensionless SOD of the corresponding wave packet. Parameters \(L_t\) and \(L_z\) define the time interval, during which the laser pulse interaction is analyzed, and the maximal distance of the pulse propagation, respectively.
+Further, for simplicity, we suppose that all coefficients \(\alpha_j\) are also the same: \(\alpha_j=\alpha\). Parameter \(\Delta_{21} k=k_2 - 2k_1\)  characterizes the phase mismatching on the length $Z_n=1\,mm$ in which units a longitudinal coordinate $z$ is measured. \(k_1\) and \(k_2\), denote dimensionless wave-numbers for waves with the FF and doubled frequency. Parameter \(\Delta_{31} k=k_3 - 3k_1\) characterizes the phase mismatching on $Z_n$ at THG. A symbol \(k_3\) denotes dimensionless TH wave-number. Coordinate \(t\) is a time, measured in units of the pulse duration \(\tau_P\) at the FF. Parameters \(\nu_{21}\) and \(\nu_{31}\) characterize dimensionless GVM between SH and FW, and TH and FW, respectively. Parameters \(D_{j}, j=1,2,3\) characterize dimensionless SOD of the corresponding wave packet. Parameters \(L_t\) and \(L_z\) define the time interval, during which the laser pulse interaction is analyzed, and the maximal distance of the pulse propagation, respectively.
 
 The initial distributions of the complex amplitudes are the following:
 \begin{equation}\begin{aligned}
@@ -108,7 +109,9 @@ The initial distributions of the complex amplitudes are the following:
 \end{aligned}\end{equation}
 and corresponds to a finite distribution of the laser pulses.
 
-Let us discuss the terms in the set of the equations \eqref{eq:ref1}. The term \(\gamma_1 A_1^2e^{i\Delta_{21} kz}\) (\(\chi^{(2)}(2\omega;\,\omega,\omega\))) in the second equation corresponds to the generation of a wave with doubled frequency for the process (\(\omega+\omega\rightarrow2\omega\)). The term \(\gamma_1  A_1^* A_2e^{-i\Delta_{21} kz}\) in the first equation is responsible for the opposite process (\(2\omega \rightarrow \omega+\omega\)). The term \(\alpha_1 A_1^3e^{i\Delta_{31}kz}\) (\(\chi^{(3)}(3\omega;\,\omega,\omega,\omega\))) in the third equation corresponds to THG due to cubic nonlinear response, and the term \(\alpha_1 {A_1^*}^2 A_3 e^{-i\Delta_{31}kz}\) in the first equation corresponds to the opposite process (\(3\omega\rightarrow\omega+\omega+\omega\)). A process of the THG via the SFG is described by the term \(\gamma_2 A_1 A_2e^{i(\Delta_{31}k-\Delta_{21}k)z}\) (\(\chi^{(2)}(3\omega;\,\omega,2\omega\))) in the third equation. The term \(\gamma_2 A_2^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\) in the first equation the term \(\gamma A_1^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\) in the second equation correspond to the reverse processes (\(3\omega\rightarrow2\omega+\omega\)). The phase mismatching for this process (denoted as \(\Delta_{SFG}k\)) is expressed through the phase mismatching of SHG and THG processes: \(\Delta_{SFG}k=\Delta_{31}k-\Delta_{21}k\). The terms \(\alpha_3 A_j|A_j|^2, j=1,\,2,\,3\) and \(\alpha_3 A_j|A_k|^2,\,j=1,2,3,\,k=1,2,3,j\ne k\) are responsible for the self- and the cross-modulation of waves, respectively. SHG via the process (\(3\omega+\omega\rightarrow2\omega+2\omega\)) corresponds to the term \(\alpha_2 A_1A_2^*A_3e^{i(2\Delta_{21}k-\Delta_{31}k )z}\) (\(\chi^{(3)}(2\omega;\,\omega,3\omega,-2\omega\))) in the second equation, and the term \(\alpha_2 A_2^2 A_3^*e^{-i(2\Delta_{21}k-\Delta_{31}k )z}\) in the first equation and the term \(\alpha_2 A_1^* A_2^2 e^{-i(2\Delta_{21}k-\Delta_{31}k )z}\) in the third equation correspond to the opposite process (\(2\omega+2\omega\rightarrow3\omega+\omega\)). In this case, the phase mismatching is the following: \(\Delta_{WM}k=2\Delta_{21}k-\Delta_{31}k\).
+Let us discuss the terms in the set of the equations \eqref{eq:ref1}. The term \(\gamma A_1^2e^{i\Delta_{21} kz}\) (\(\chi^{(2)}(2\omega;\,\omega,\omega\))) in the second equation corresponds to the generation of a wave with doubled frequency for the process (\(\omega+\omega\rightarrow2\omega\)). The term \(\gamma  A_1^* A_2e^{-i\Delta_{21} kz}\) in the first equation is responsible for the opposite process (\(2\omega \rightarrow \omega+\omega\)). The term \(\alpha A_1^3e^{i\Delta_{31}kz}\) (\(\chi^{(3)}(3\omega;\,\omega,\omega,\omega\))) in the third equation describes THG due to cubic nonlinear response, and the term \(\alpha {A_1^*}^2 A_3 e^{-i\Delta_{31}kz}\) in the first equation corresponds to the opposite process (\(3\omega\rightarrow\omega+\omega+\omega\)). A process of the THG via the SFG is described by the term \(\gamma A_1 A_2e^{i(\Delta_{31}k-\Delta_{21}k)z}\) (\(\chi^{(2)}(3\omega;\,\omega,2\omega\))) in the third equation. In turn, the term \(\gamma A_2^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\) in the first equation and the term \(\gamma A_1^* A_3e^{-i(\Delta_{31}k-\Delta_{21}k)z}\) in the second equation correspond to the reverse processes (\(3\omega\rightarrow2\omega+\omega\)). 
+
+The terms \(\alpha A_j|A_j|^2, j=1,\,2,\,3\) and \(\alpha A_j|A_k|^2,\,j=1,2,3,\,k=1,2,3,j\ne k\) are responsible for the self- and the cross-modulation of waves, respectively. SHG via the process (\(3\omega+\omega\rightarrow2\omega+2\omega\)) corresponds to the term \(\alpha A_1A_2^*A_3e^{i(2\Delta_{21}k-\Delta_{31}k )z}\) (\(\chi^{(3)}(2\omega;\,\omega,3\omega,-2\omega\))) in the second equation, and the term \(\alpha A_2^2 A_3^*e^{-i(2\Delta_{21}k-\Delta_{31}k )z}\) in the first equation as well as the term \(\alpha A_1^* A_2^2 e^{-i(2\Delta_{21}k-\Delta_{31}k )z}\) in the third equation corresponds to the opposite process (\(2\omega+2\omega\rightarrow3\omega+\omega\)). 
 
  Let us note that the introduced dimensionless parameters and functions are expressed through the physical ones, denoted with containing line above them, with accordance to a rule:
 \begin{equation}
@@ -119,53 +122,25 @@ Let us discuss the terms in the set of the equations \eqref{eq:ref1}. The term \
 &\gamma=\frac{2\pi\chi^{(2)}\bar{k}\sqrt{I_{01}}}{n^2}Z_n,\,\alpha=\frac{3\pi \bar{k}}{2n^2}\chi^{(3)}I_{01} Z_n,
 \end{aligned}
 \end{equation}
-$n$ is a refractive index with FF. For computer simulation we choose the following values of the physical parameters: \(\tau_P \text{ is changed from } 100fs\text{ to }10ps,\) the wavelength corresponding to wave with FF is equal to \(\lambda_1=1064\,nm\) or \(\lambda_1=800\,nm\). 
+$n$ is a refractive index at FF.
 
-In Table \ref{tab:1}, we show some characteristics of various crystals at the frequencies corresponding to the frequency conversion processes under consideration. First of all, we write the angle \(\theta\) of the phase matching for the THG due to the cubic nonlinear response of a medium (the second row in Table \ref{tab:2}). The first and second derivatives of wave number with respect to the frequency are presented at the frequencies \(\omega,\, 2\omega\) and \(3\omega\). All data are computed using so-called Sellmeier equations, and they coincide with values, presented in \cite{bib:ri}. We also place the references to the papers, which contain the data, after the names of the crystals. 
+For computer simulation we choose the following values of the physical parameters: \(\tau_P \text{ is changed from } 100fs\text{ to }10ps,\) the wavelength corresponding to wave with FF is equal to \(\lambda_1=1064\,nm\) or \(\lambda_1=800\,nm\).  The angle \(\theta\) of the phase matching for the THG, and the second order susceptibility of selected crystals with dependent on the angles \(\theta\) and \(\varphi\) as well as the incident pulse intensity, at which the coupling coefficient \(\gamma\) is equal to unity at the phase matching angle \(\theta\) and the crystal length $1\,mm$, are shown in Table \ref{tab:2}. The angles are measured between the crystal axis in the uni-axial crystal and wave vector of the FW.We also show the references to the papers, which contain the data, after the names of the crystals.
 
-The second order susceptibility of selected crystals with dependent on the angles \(\theta\) and \(\varphi\), and the incident pulse intensity, at which the coupling coefficient \(\gamma\) is equal to unity at the phase matching angle \(\theta\) (see Table \ref{tab:1}), are shown in Table \ref{tab:2}. The angles are measured between the crystal axis in the uniaxial crystal and wave vector of the FW.
-
-\begin{table}
-\caption{Characteristics of chosen crystals at \(\lambda=1064\,nm\) of FW}
-{\begin{tabular}{|c|c|c|c|c|c|c|} 
+\begin{table}[h]
+\caption{The second order susceptibility of some crystals and the incident pulse intensity $I_0$ in dependence of the laser pulse propagation direction with respect to the crystal axis: \((\theta,\,\varphi)\) are spherical coordinates. Phase matching angles are provided for FW length $\lambda=1064\,nm$. }
+{\begin{tabular}{|c|c|c|c|} 
 \hline
-\multicolumn{2}{|c|}{Crystal}& KDP \cite{bib:n26} & ADP \cite{bib:n26} & BBO \cite{bib:c1} & KBBF \cite{bib:c2} &RBBF \cite{bib:c3}\\
+Crystal& THG matching angle $\theta (^{\circ})$& $\chi^{(2)} (pm/V)$ & $ I_0\,(10^9\,W/cm^2)$ \\
 \hline
-\multicolumn{2}{|c|}{Angle of THG matching $\theta (^{\circ})$} & 64.97 & 66.58 & 37.48 & 31.16 & 33.77 \\
+KDP \cite{bib:n26,bib:c4}& 64.97 & $0.76\sin\theta\sin(2\varphi)$ & 2 \\
 \hline
-\multirow{3}{*}{$\frac{d\bar{k}}{d\bar{\omega}}\,(fs/mm)$}& $\bar{\omega}$ & 5084.286 & 5143.42 & 5580.894 & 4951.404 & 4968.198 \\
-\cline{2-7}
-&$2\bar{\omega}$& 5013.268 & 5063.373 & 5566.836 & 4936.176 & 4955.312 \\
-\cline{2-7}
-&$3\bar{\omega}$& 5186.888 & 5257.651 & 5889.541 & 5076.076 & 5098.390\\
+ADP \cite{bib:n26,bib:c4}& 66.58& $0.76\sin\theta\sin(2\varphi)$ & 2.03 \\
 \hline
-\multirow{3}{*}{$\frac{d^2\bar{k}}{d\bar{\omega}^2}\,(fs^2/mm)$}&$\bar{\omega}$ & -12.67 & -16.854 & 42.294 & 14.992 & 17.659 \\
-\cline{2-7}
-&$2\bar{\omega}$& 67.281 & 74.176 & 120.486 & 57.265 & 58.654 \\
-\cline{2-7}
-&$3\bar{\omega}$& 124.038 & 139.035 & 229.83 & 96.377 & 98.461 \\
+BBO \cite{bib:c1,bib:c4}& 37.48& $4.32(\sin\theta-0.07\cos\theta\sin(3\varphi))$ & 0.21 \\
 \hline
-\end{tabular}
-\label{tab:1}}
-\end{table}
-
-
-
-\begin{table}
-\caption{The second order susceptibility of some crystals and the incident pulse intensity $I_0$ in dependence of the laser pulse propagation direction with respect to the crystal axis: \((\theta,\,\varphi)\) are spherical coordinates }
-{\begin{tabular}{|c|c|c|} 
+KBBF \cite{bib:c2,bib:c5}& 31.16& $0.98\cos\theta\cos(3\varphi)$ & 1.28 \\
 \hline
-Crystal& $\chi^{(2)} (pm/V)$ & $ I_0\,(10^9\,W/cm^2)$ \\
-\hline
-KDP \cite{bib:c4}& $0.76\sin\theta\sin(2\varphi)$ & 2 \\
-\hline
-ADP \cite{bib:c4}& $0.76\sin\theta\sin(2\varphi)$ & 2.03 \\
-\hline
-BBO \cite{bib:c4}& $4.32(\sin\theta-0.07\cos\theta\sin(3\varphi))$ & 0.21 \\
-\hline
-KBBF \cite{bib:c5}& $0.98\cos\theta\cos(3\varphi)$ & 1.28 \\
-\hline
-RBBF \cite{bib:c3}& $0.9\cos\theta\cos(3\varphi)$ & 1.63 \\
+RBBF \cite{bib:c3}&33.77& $0.9\cos\theta\cos(3\varphi)$ & 1.63 \\
 \hline
 \end{tabular}
 \label{tab:2}}
@@ -176,15 +151,11 @@ The frequency conversion efficiency is estimated as:
 \begin{equation}
 \eta_j(z)=\frac{\int\limits_0^{L_t}|A_j(z,t)|^2dt}{\int\limits_0^{L_t}|A_1(z=0,t)|^2dt}.
 \end{equation}
-Another characteristic, which describes the frequency conversion process is the pulse spectra. They are computed by the formula
+Another characteristic, which describes the frequency conversion process, is the pulse spectra. They are computed by the formula
 \begin{equation}
 \hat{A}_j^\omega(z;\omega)=\frac{1}{\sqrt{2\pi}}\int\limits_{0}^{L_t} A_j(z,t)e^{-i\omega t}dt,\,j=1,\,2,\,3
 \end{equation}
-using the NumPy module \cite{bib:np} of Python Language. We also use the pulse full width at half maximum of intensity (FWHM):
-\[\tau_j(z)=T_2-T_1,\, |A_j(z,T_l)|^2=0.5|A_j(z,0.5L_t)|^2,\,l=1,\,2,\,T_1<0.5L_t<T_2.\]
- and the corresponding value for spectrum FWHM. Thus, the incident pulse FWHM equals \(1.1772\), and the incident pulse spectrum FWHM equals \(2.357\).
- \textcolor{red}{окончание неиспрвленного куска}
- 
+using the NumPy module \cite{bib:np} of Python Language. 
 
 The set \eqref{eq:ref1} of equations  possesses some invariants:
 \begin{equation}
@@ -201,17 +172,18 @@ I_2=\int\limits_0^{L_t}\left(\sum\limits_{j=1}^3 p_j A_j \frac{\partial A_j^*}{\
 \begin{equation}
 \label{eq:inv3}
 \begin{aligned}
-&I_3=\int\limits_0^{L_t}\Big(-\sum\limits_{j=1}^3 p_jD_j |\frac{\partial A_j}{\partial t}|^2-\nu_{21}Im\left(A_2^*\frac{\partial A_2}{\partial t}\right)-\nu_{31}Im\left(A_3^*\frac{\partial A_3}{\partial t}\right)+6\gamma Re\bigl(2A_1 A_2 A_3^*e^{i(\Delta_{31}k-\Delta_{21}k)z}\\
+&I_3=\int\limits_0^{L_t}\Big(-\sum\limits_{j=1}^3 p_jD_j |\frac{\partial A_j}{\partial t}|^2-p_2\nu_{21}Im\left(A_2^*\frac{\partial A_2}{\partial t}\right)-p_3\nu_{31}Im\left(A_3^*\frac{\partial A_3}{\partial t}\right)+6\gamma Re\bigl(2A_1 A_2 A_3^*e^{i(\Delta_{31}k-\Delta_{21}k)z}\\
 &+A_1^2 A_2^*e^{\Delta_{21}k\cdot z}\bigr)+\alpha\big(4Re\bigl({A_1^3}{A_3^*}e^{i\Delta_{31}k\cdot z}+3{A_1^*}{A_2^2}{A_3^*}e^{-i(2\Delta_{21}k-\Delta_{31}k)z}\bigr)+3({|A_1|^4}+{|A_2|^4}+{|A_3|^4})\\
-&+12({|A_1|^2}{|A_2|^2}+{|A_1|^2}{|A_3|^2}+{|A_2|^2}{|A_3|^2}))+3\Delta_{21} k|A_2|^2+2\Delta_{31} k|A_3|^2\Big)dt,\,p_1=6,\, p_2=3,\, p_3=2
+&+12({|A_1|^2}{|A_2|^2}+{|A_1|^2}{|A_3|^2}+{|A_2|^2}{|A_3|^2}))+p_2\Delta_{21} k|A_2|^2+p_3\Delta_{31} k|A_3|^2\Big)dt,\,p_1=6,\, p_2=3,\, p_3=2
 \end{aligned}
 \end{equation}
--- the third invariant (Hamiltonian). \textcolor{red}{не совсем понятно, откуда в (8) слагаемые с интенсивностью, умноженные на разность фаз. Из (1) этого не следует. Исправьте. Я все помню, как получалось. Но из (8) непосредственно это не следует. Исправляйте} 
-Let us notice that for unbounded time domain the integration limits change on \(\{-\infty,\infty\}\), respectively. 
+-- the third invariant (Hamiltonian). At this invariant derivation, firstly the substitution $A_j=\bar{A}_j\exp(i\Delta_{j1}kz),\,j=2,\,3$and secondly, inverse transform to the functions $A_j$ were used.
 
-\section{Induced cubic non-linear response based on cascading SHG}
+Let us notice that  the integration limits change on \(\{-\infty,\infty\}\), respectively if the laser pulse interaction is analyzed in unbounded time domain. 
 
-\subsection{Derivation of the \textcolor{red}{modified } equations}
+\section*{Induced cubic non-linear processes based on cascading SHG}
+
+\subsection*{Derivation of the modified  equations}
 
 For demonstrating  appearance of the  induced cubic susceptibility of a medium due to cascading SHG, we use the multi-scale method \cite{bib:n24}, which was early applied in \cite{bib:n19} for demonstration of observing induced non-linearity similar Kerr effect and responsible for the pulse self-compression or its decompression  because of the  process under considerationю
 With this aim we consider a case \(\alpha=0\), which corresponds to omitting the terms with cubic nonlinear response in \eqref{eq:ref1},  and \(\Delta_{31}k=0\), which corresponds to the phase matching between the incident wave and the wave with trebled frequency. Because we consider a big phase mismatching between SH and FW: \(|\Delta_{21}k|>>1\), then the process of wave interaction possesses various space scales: in particular, a small scale, defined by big phase mismatching \(|\Delta_{21}k|\), and a long space scale defined by the dispersion lengths of the interacting pulses. 
@@ -228,7 +200,7 @@ $$
 &\frac{\partial{A_2}}{\partial{z}}+\nu_{21}\frac{\partial A_2}{\partial t}+iD_2\frac{\partial^2{A_2}}{\partial{t^2}}+i\gamma\left(A_1^2e^{i\Delta_{21} kz}+2A_1^*A_3e^{i\Delta_{21}kz}\right)=0,\\
 &\frac{\partial{A_3}}{\partial{z}}+\nu_{31}\frac{\partial A_3}{\partial t}+iD_3\frac{\partial^2{A_3}}{\partial{t^2}}+3i\gamma A_1 A_2e^{-i\Delta_{21}kz}+i\Delta_{31}kA_3=0,\,0< z \leq L_z , 0<t<L_t.\\
 \end{aligned}\end{equation}
-\textcolor{red}{As follows from the set of equations \eqref{eq:refg} we take into account the three-waves interaction with equidistant frequencies in contrast to the well-known case of cascading SHG , at which the wave with trebled frequency is not considered. This is a main difference between current study and other papers referring to the problem of cascading SHG. }
+As follows from the set of equations \eqref{eq:refg} we take into account the three-waves interaction with equidistant frequencies in contrast to the well-known case of cascading SHG , at which the wave with trebled frequency is not considered. This is a main difference between current study and other papers referring to the problem of cascading SHG.
 
 Then let's introduce a small parameter \(\mu=\frac{1}{\Delta_{21}k}\) (for simplicity, we suppose that the phase mismatching has a positive sign) and introduce various scales along \(z\) coordinate: small scale equal to the inverse phase mismatching length: \(\xi=\frac{z}{\mu}\), and big longitudinal scales \(z_l=\mu^lz,\,l=0,1,2...\). Because of the big absolute value of the phase mismatching, the SHG efficiency is very low. Therefore, the complex amplitudes are expanded in a power series of \(\mu\):
 \begin{equation}
@@ -420,19 +392,18 @@ I_3&=\int\limits_0^{L_t}\Big(2\nu_{31}Im\left(W^*\frac{\partial W}{\partial t}\r
 
 We  emphasize that a value of the energy invariant \eqref{eq:ninv1} coincides with a value of  \eqref{eq:inv1} because these invariants are equal to \(\int\limits_0^{L_t}|A_{10}|^2dt\). However, because the invariant for the  set modified equations do not contain the SH wave, then the sum energy of two other waves will be greater than a sum of the energies of corresponding waves computed using the original problem.
 
-
-\textcolor{red}
-{
-\subsection{Equivalence   of the induced cubic susceptibility and  own susceptibility of a medium }
-}
+It should be told a few words about physical mechanism of appearance of  non-linear processes inherent cubic non-linearity at the laser pulse propagation in a medium with quadratic non-linear response under the cascading SHG. For example, in  \cite{bib:n19} the authors stress that the self-lensing term $|A|^2A$, which describes the nonlinear phase shift acquired during sequences of cascaded photon processes, each involving upconversion to $2\omega$ followed by backconversion at $\omega$. This two-step process leads to an effective cubic susceptibility $\chi_{eff}^{(3)}(\omega; \omega,2\omega,\omega) \leftarrow \chi^{(2)}(\omega; 2\omega,2\omega)\chi^{(2)}(2\omega; \omega,\omega)$, which is characteristic of the effective four-photon interaction $\omega=\omega-\omega+\omega$. But in this paper as well in many another papers, the authors consider only the first two equations in \eqref{eq:refg} with respect FW and SH. If the phase mismatching $\Delta_{21}k$ is big then the SH complex amplitude is proportional to $A_1^2$. It means that the response of a medium  contains of phase grating  on the frequency $2\omega$. The optical radiation with FW scatters on the grating and the TH appears. If the phase matching for TH and FW occurs then this process will be significant. But early the researchers have paid attention only to problem of the self- (or de-) compression (or soliton formation) of the laser pulse  under the cascading SHG and did not discuss its possible using for frequency up-conversion. Mathematically, we can see a term responsible THG if we analyze all three equations in \eqref{eq:refg} and put instead a small amplitude $A_2$ the term  $A_1^2$ in the third equation. This is rough mathematical reasoning. Correct math expression is derived on the base of multi-scale method. 
 
 
-\textcolor{red} {To illustrate that we get the induced cubic susceptibility we show below two tests which confirm our approach. With this aim we depict in Fig. \ref{fr:f}a a dependence of both the TH intensity and the THG efficiency on the incident pulse maximal intensity at computing both in long pulse duration approximation (lines) and at accounting for the   SOD action    (circles and triangles, stars and squares) at using two set of the equations. In the first case, the pulses propagate in a medium with the quadratic susceptibility at phase mismatching \(\Delta_{21}k=20\) between SH and BW. In the second one, we consider THG (SH is absent) in a medium with the cubic susceptibility at the appropriate choice of the parameter \(\alpha\) being equal to \(3\gamma^2/\Delta_{21}k\). As it follows from the equations sets \eqref{eq:ref1},\eqref{eq:main}, such a choice of the parameter \(\alpha\) leads to the same coefficient at the term $A_1^3$ (or $U^3$) in both sets. Compairing computation results we see practically the same way of changing both the pulse intensity and the frequency conversion efficiency computed using both sets of equations.} 
+\subsection*{Equivalence   of the induced cubic susceptibility and  own susceptibility of a medium }
+
+
+To illustrate that we get the induced cubic susceptibility we show below two tests which confirm our approach. With this aim we depict in Fig. \ref{fr:f}a a dependence of both the TH intensity and the THG efficiency on the incident pulse maximal intensity $I_{01}=|A_{01}|^2$  at computing both in long pulse duration approximation (lines) and at accounting for the   SOD action    (circles and triangles, stars and squares) at using two set of the equations. In the first case, the pulses propagate in a medium with the quadratic susceptibility at phase mismatching \(\Delta_{21}k=20\) between SH and FW. In the second one, we consider THG (SH is absent) in a medium with the cubic susceptibility at the appropriate choice of the parameter \(\alpha\) being equal to \(3\gamma^2/\Delta_{21}k\). As it follows from the equations sets \eqref{eq:ref1},\eqref{eq:main}, such a choice of the parameter \(\alpha\) leads to the same coefficient at the term $A_1^3$ (or $U^3$) in both sets. Comparing computation results we see practically the same way of changing both the pulse intensity and the frequency conversion efficiency computed using both sets of equations. 
 
 \begin{figure}[h!] 
 \centering 
 \includegraphics[height=10cm, width=0.7\linewidth]{CascadeF}  
-\caption{ \textcolor{red}{НЕТ СЛОВ ОБ ЭФФЕКТИВНОСТИ В ПОДПИСЯХ. Опишите.}  TH maximal intensity dependence on the FW maximal incident intensity computed at parameters \(\gamma=1,\alpha=0,\Delta_{21}k=20,\,\Delta_{31}k=0\) (solid line, circles and stars) and at \(\gamma=0,\alpha=0.15,\Delta_{21}k=0,\,\Delta_{31}k=0\) (dashed line, triangles and squares) in the frame-work of the long pulse duration approximation (lines) or with accounting for the   SOD influence (\(D_1=-0.0032, D_2 =  -0.0083, D_3 =  -0.0199\), circles and triangles, stars and squares) (a). TH maximal intensity computed at $\gamma=1,\,\alpha=0.15,\Delta_{21}k=20,\,\Delta_{31}k=0,D_j=0,j=1,\,2,\,3$ (b)}
+\caption{  TH maximal intensity and THG conversion efficiency in dependence of the FW maximal incident intensity computed at parameters \(\gamma=1,\alpha=0,\Delta_{21}k=20,\,\Delta_{31}k=0\) (solid line, circles and stars) and at \(\gamma=0,\alpha=0.15,\Delta_{21}k=0,\,\Delta_{31}k=0\) (dashed line, triangles and squares) in the frame-work of the long pulse duration approximation (lines) or with accounting for the   SOD influence (\(D_1=-0.0032, D_2 =  -0.0083, D_3 =  -0.0199\), circles and triangles (intensity), stars and squares (efficiency)) (a).  Evolution along z-coordinate of the TH maximal intensity  computed at $\gamma=1,\,\alpha=0.15,\Delta_{21}k=20,\,\Delta_{31}k=0,D_j=0,j=1,\,2,\,3$ (b)}
 \label{fr:f}
 \end{figure}
 
@@ -441,7 +412,7 @@ Another test refers to the computer simulation of frequency tripling in a medium
 Thus, these results show clearly that the cascading SHG induces the cubic susceptibility. 
 
 
-\subsection{Exact solution of the modified problem.}
+\subsection*{Exact solution of the modified problem.}
 In the framework of the long pulse duration approximation, the functions \(U,W\) depend only on \(z\) coordinate, and we can rewrite the problem \eqref{eq:main2},\eqref{eq:ini2} in the form:
 \begin{equation}
 \label{eq:main2l}
@@ -467,14 +438,16 @@ To write intensities evolution for the interacting waves, we use a well-known re
 U(z)=a_1e^{i\varphi_1(z)},\,W(z)=a_3e^{i\varphi_3(z)},
 \end{equation}
 where \(a_j,\,\varphi_j\) are the real functions describing amplitudes and phases of the waves. In new notations, the equations \eqref{eq:main2l} are re-written:
+
 \begin{equation}
 \label{eq:main3}
 \begin{aligned}
 &\frac{da_1}{dz}=-\frac{3\gamma^2}{\Delta_{21}k}a_1^2a_3\sin\varphi,\\
 &\frac{da_3}{dz}=\frac{3\gamma^2}{\Delta_{21}k}a_1^3\sin\varphi,\\
-&\frac{d\varphi}{dz}-\frac{\gamma^2}{\Delta_{21}k}\left(3\left(\frac{a_1^3}{a_3}-3a_1a_3\right)\cos\varphi+3a_1^2-6a_3^2\right)+\Delta_{31}k=0,
+&\frac{d\varphi}{dz}-\frac{3 \gamma^2}{\Delta_{21}k}\left(a_1  \left(\frac{a_1^2}{a_3}-3a_3\right)\cos\varphi+a_1^2-2a_3^2\right)+\Delta_{31}k=0,
 \end{aligned}
 \end{equation}
+
 here \(\varphi=\varphi_3-3\varphi_1\) is a phase difference between TH and FW. The invariants  \eqref{eq:ninvs} are transformed to the following form:
 \[
 \begin{aligned}
@@ -485,7 +458,7 @@ here \(\varphi=\varphi_3-3\varphi_1\) is a phase difference between TH and FW. T
 
 To express \(\cos \varphi\) we modify the third invariant:
 \[
-\tilde{I}_3=I_3+3\frac{\gamma^2}{\Delta_{21}k}I_1^2=-12\frac{\gamma^2}{\Delta_{21}k}a_1^3a_3\cos\varphi+-6\frac{\gamma^2}{\Delta_{21}k}a_1^2a_3^2+3\frac{\gamma^2}{\Delta_{21}k}a_3^4+2\Delta_{31}ka_3^2=0,
+\tilde{I}_3=I_3+3\frac{\gamma^2}{\Delta_{21}k}I_1^2=-12\frac{\gamma^2}{\Delta_{21}k}a_1^3a_3\cos\varphi-6\frac{\gamma^2}{\Delta_{21}k}a_1^2a_3^2+3\frac{\gamma^2}{\Delta_{21}k}a_3^4+2\Delta_{31}ka_3^2=0,
 \]
 which equals zero because the TH incident intensity is equal to zero: \(a_3(0)=0\). Hence, we can express \(\cos \varphi\):
 \begin{equation}
@@ -496,14 +469,14 @@ where the parameter $q$ is defined as:
 $$
 q=\frac{\Delta_{21}k\Delta_{31}k}{\gamma^2},
 $$
-which characterizes relation between phase incursions because of phase mismatching between SH and BW, and TH and BW, respectively, and because of nonlinear coupling coefficient ${\gamma}$.
+which characterizes relation between phase incursions because of phase mismatching between SH and FW, and TH and FW, respectively, and because of nonlinear coupling coefficient ${\gamma}$.
 Obviously, an inequality 
 \[
 |\cos\varphi|\le1
 \]
 must be valid. This leads to restriction on the intensities changing.
 Then we find \(\sin \varphi\) from the equality \eqref{eq:cos} and substitute it into the second equation of \eqref{eq:main3}, which is preliminary multiplied by \(a_1\). As a result, we write the following equation with respect to the TH intensity:
-\[\frac{da_3^2}{dz}=\pm6\frac{\gamma^2}{\Delta_{21}k}a_1^3a_3(\sqrt{1-\frac{a_3^2(-6a_1^2+3a_3^2+2q)^2}{36a_1^6}}.\]
+\[\frac{da_3^2}{dz}=\pm6\frac{\gamma^2}{\Delta_{21}k}a_1^3a_3\sqrt{1-\frac{a_3^2(-6a_1^2+3a_3^2+2q)^2}{144a_1^6}}.\]
 Using the new variable \(p_3=a_3^2\) and expressing \(a_1^2\) from the first invariant \(a_1^2=1-p_3\), we finally obtain:
 \begin{equation}
 \label{eq:main4}
@@ -512,68 +485,66 @@ Using the new variable \(p_3=a_3^2\) and expressing \(a_1^2\) from the first inv
 &f(p_3)=\frac{16}{25}((1-p_3)^3-\frac{1}{144}p_3(9p_3+2q-6)^2).
 \end{aligned}
 \end{equation}
-Sign in the right side of the equation corresponds to different processes: sign ``plus" corresponds to a conversion of the BW energy to TH energy, and sign ``minus" to reverse energy conversion from the wave with trebled frequency to the FW. So, since TH incident intensity equals zero, then we choose the sign ``plus".
+Sign in the right side of the equation corresponds to different processes: sign ``plus" corresponds to a conversion of the FW energy to TH energy, and sign ``minus" to reverse energy conversion from the wave with trebled frequency to the FW. So, since TH incident intensity equals zero, then we choose the sign ``plus".
 
 The intensity evolution is defined by the parameter $q$ because it defines the number of real roots of the equation
 $$
 f(p_3)=0,
 $$
 which can be found, for example, by using the Sturm theorem. We  denote them as
-$P_{31},\,P_{32},\,P_{33}$, where $P_{31}$ is  real always. If two other roots are also real then we support that there is inequality:   $P_{31}\le P_{32}\le P_{33}$ between them. Obviously, this   \textcolor{red}{assumption} does not restrict our consideration.
+$P_{31},\,P_{32},\,P_{33}$, where $P_{31}$ is  real always. If two other roots are also real then we support that there is inequality:   $P_{31}\le P_{32}\le P_{33}$ between them. Obviously, this   assumption does not restrict our consideration.
 It should be also stressed that a solution of the equation \eqref{eq:main4} is expressed through the elliptical functions or, in certain cases, through elementary functions. Below we briefly discuss the problem  solution corresponding to various values of the parameter $q$.
 Moreover, we вdevelop also the TH phase evolution. Because of the complexity of the obtained formula we do not write it here. However, using the formulas with respect to the phase and the intensity, it is possible to approximate the solution of the problem \eqref{eq:ref1}-\eqref{eq:first} with good accuracy. We show it below using the computer simulation results.
-
 
 \paragraph*{Domain  $q<-1.5,\,q>3 + \frac{9}{\sqrt[3]{2}}-9\sqrt[3]{ 2}$: two complex roots $P_{32},P_{33}$.}
 Only the root $P_{31}$ is positive. As a result, the TH intensity  $p_3(z)$ changes between zero and $P_{31}$ with accordance of the following formula:
 \begin{equation}
 \label{eq:p1_1}
-p_3(z)=|A_3(z)|^2=\frac{cP_{31}(1-cn(7.5\frac{\gamma^2}{\Delta_{21}k}\kappa z,k))}{(d-c)cn(7.5\frac{\gamma^2}{\Delta_{21}k}\kappa z,k)+(c+d)},
+p_3(z)=|A_3(z)|^2=\frac{cP_{31}(1-cn(7.5\frac{\gamma^2}{\Delta_{21}k}\kappa z,m))}{(d-c)cn(7.5\frac{\gamma^2}{\Delta_{21}k}\kappa z,
+m)+(c+d)},
 \end{equation}
 where
 $$
 \begin{aligned}
-&c=\sqrt{r^2+s^2},\, d=\sqrt{(p_{31}-r)^2+s^2}, \kappa=\sqrt{cd}, k=\frac{\kappa^2+(r+P_{31})r-s^2}{2\kappa^2},\\
+&c=\sqrt{r^2+s^2},\, d=\sqrt{(p_{31}-r)^2+s^2}, \kappa=\sqrt{cd}, m=\frac{\kappa^2+(r+P_{31})r-s^2}{2\kappa^2},\\
 &r=Re(P_{32}),\, s=Im (P_{32}).
 \end{aligned}
 $$
-\textcolor{red}{исправьте обозначение корней выше. Просмотрите все и везде. Кое-где я поправил}. This domain of the parameter $q$ contains important case of THG corresponding to the phase matching between FW and TH ($\Delta_{31}k=0$). Under this condition there is only a unique branch of the TH intensity changing between \(0\) and $P_{31}=0.8$, and this value coincides with our estimation obtained above \textcolor{red}{где эта оценка??? Непонятно}. Other two roots are defined by a solution of the equation \(5p_3^2-8p_3+4=0\), and they are the complex ones (\(P_{31,\,32}=0.8\pm0.4i\)). 
+This domain of the parameter $q$ contains important case of THG corresponding to the phase matching between FW and TH ($\Delta_{31}k=0$). Under this condition there is only a unique branch of the TH intensity changing between \(0\) and $P_{31}=0.8$. Other two roots are defined by a solution of the equation \(5p_3^2-8p_3+4=0\), and they are the complex ones (\(P_{31,\,32}=0.8\pm0.4i\)). 
 As a result, the TH intensity evolution  is described by:
 
 \begin{equation}
 \label{eq:sol}
 p_3(z)=\frac{4(1-cn(\frac{3\sqrt[4]{5}\gamma^2}{\Delta_{21}k}z; 0.5(1-\frac{1}{\sqrt{5}})))}{(5+\sqrt{5})-(5-\sqrt{5})cn(\frac{3\sqrt[4]{5}\gamma^2}{\Delta_{21}k}z; 0.5(1-\frac{1}{\sqrt{5}}))}.
 \end{equation}
-As follows from \eqref{eq:sol}, the coupling coefficient \(\gamma\) and the phase mismatching between BW and SH (\(\Delta_{21}k\))  influence only on the intensity oscillation period: the TH maximal intensity remains the same  and equals \(0.8\).
+As follows from \eqref{eq:sol}, the coupling coefficient \(\gamma\) and the phase mismatching between FW and SH (\(\Delta_{21}k\))  influence only on the intensity oscillation period. Let's note that in all other modes (at $\Delta_{31}k\ne0$) of THG there is more complicated dependencies of the TH maximal intensity and period  from $\Delta_{21}k$. Therefore, we do not discuss this below. 
 
 \paragraph*{Domain $-1.5<q<3 + \frac{9}{\sqrt[3]{2}}-9\sqrt[3]{ 2}$: three real roots.} 
-In this case all three roots $P_{3j}$ are positive. Therefore, there are two regimes of the waves interaction: low-efficient mode and high-efficient one. In low-efficient regime, the TH intensity changes between $0$ and $P_{31}$ as follows: \textcolor{red}{испраьте корни и тд}
+In this case all three roots $P_{3j}$ are positive. Therefore, there are two regimes of the waves interaction: low-efficient mode and high-efficient one. In low-efficient regime, the TH intensity changes between $0$ and $P_{31}$ as follows:  
+
 \begin{equation}
 \label{eq:p1_2}
 \begin{aligned}
-&p_1(z)=\frac{P_{31}P_{33}sn^2(7.5\frac{\gamma^2}{\Delta_{21}k}\sqrt{P_{32}(P_{33}-P_{31})}z,k)}{P_{31}sn^2(7.5\frac{\gamma^2}{\Delta_{21}k} \sqrt{(P_{32})(P_{33}-P_{31})}z,k)+(P_{33}-P_{31})},\\
-&k=\sqrt{\frac{P_{31}(P_{33}-P_{32})}{P_{32}(P_{33}-P_{31})}}.
+&p_3(z)=\frac{P_{31}P_{33}sn^2(3.75\frac{\gamma^2}{\Delta_{21}k}\sqrt{P_{32}(P_{33}-P_{31})}z,m)}{P_{31}sn^2(3.75\frac{\gamma^2}{\Delta_{21}k} \sqrt{(P_{32})(P_{33}-P_{31})}z,m)+(P_{33}-P_{31})},\\
+&m=\sqrt{\frac{P_{31}(P_{33}-P_{32})}{P_{32}(P_{33}-P_{31})}}.
 \end{aligned}
 \end{equation} 
 In high-efficient regime, the TH intensity changes between values of the roots $P_{32}$ and $P_{33}$ according to the rule:
-\textcolor{red}{испраьте корни и тд}
 \begin{equation}
 \label{eq:p1_2bis}
 \begin{aligned}
-&p_1(z)=\frac{P_{32}P_{33}}{(P_{33}-P_{32})sn^2(7.5\frac{\gamma^2}{\Delta_{21}k}\sqrt{P_{32}(P_{33}-P_{31})}z,k)+P_{32}},\\
-&k=\sqrt{\frac{P_{31}(P_{33}-P_{32})}{P_{32}(P_{33}-P_{31})}}.
+&p_3(z)=\frac{P_{32}P_{33}}{(P_{33}-P_{32})sn^2(3.75\frac{\gamma^2}{\Delta_{21}k}\sqrt{P_{32}(P_{33}-P_{31})}z,m)+P_{32}}\\
 \end{aligned}
 \end{equation}
-\textcolor{red}{Напишите что-то о периоде и амплитуде.}
+with the same coefficient $m$ as in \eqref{eq:p1_2}.
+
 \paragraph*{The first special case $q=-1.5$: $0<P_{31}<P_{32}=P_{33}=1$.}
-\textcolor{red}{испраьте корни и тд. Ничего непонятно.}
 For this parameter value  $q$, the TH intensity $p_3(z)$  changes again between $0$ and $P_{31}=0.64$. However, the solution is expressed through the cosine function:
 \begin{equation}
 \label{eq:p1_3}
-p_1(z)=\frac{P_{31}(1-\cos(6\frac{\gamma^2}{\Delta_{21}k}z))}{-P_{31}\cos(6\frac{\gamma^2}{\Delta_{21}k}z)+2-P_{31}}=\frac{8(1-\cos(6\frac{\gamma^2}{\Delta_{21}k}z))}{-8\cos(6\frac{\gamma^2}{\Delta_{21}k}z)+17}.
+p_3(z)=\frac{P_{31}(1-\cos(6\frac{\gamma^2}{\Delta_{21}k}\sqrt{1-P_{31}}z))}{-P_{31}\cos(6\frac{\gamma^2}{\Delta_{21}k}\sqrt{1-P_{31}}z)+2-P_{31}}=\frac{8(1-\cos(4.5\frac{\gamma^2}{\Delta_{21}k}z))}{-8\cos(4.5\frac{\gamma^2}{\Delta_{21}k}z)+17}.
 \end{equation}
 
-\textcolor{red}{продолжите формулу, подставив Р31.}
 
 \paragraph*{The second special case $q=3+\frac{9}{\sqrt[3]{2}}-9\sqrt[3]{2}$: $0<P_{31}=P_{32}<P_{33}<1$.}
 In this case $q\approx-1.2$ , there are two regimes of the frequency conversion. In both of them (low-efficient and high-efficient), the TH intensity $p_3$ evolution is governed  by:
@@ -584,160 +555,128 @@ In this case $q\approx-1.2$ , there are two regimes of the frequency conversion.
 &z(p_3)=\frac{1}{7.5\frac{\gamma^2}{\Delta_{21}k}\sqrt{P_{31}(P_{33}-P_{31})}}\ln\frac{\left(\sqrt{(P_{33}-P_{31})p_3}+\sqrt{P_{31}(P_{33}-p_3)}\right)^2}{|p_3-P_{31}|P_{33}},
 \end{aligned}
 \end{equation}
-Analysis of \eqref{eq:p1_4} shows that the THG maximal efficiency is more than $95\%$ and this value is achieved at $q=?????$ as one can see in Fig.\ref{fr:cglp}.
+where the modulus is expanded with positive sign at high-effective regime: $P_{31}<p_3<P_{33}$, and with negative sign at low-effective regime $0<p_3<P_{31}$.
+
+ From \eqref{eq:p1_4} together with computations of the equation
+$ f(p_3)=0$ roots, it is possible to compute the THG maximal efficiency: its value is more than $95\%$ and it is achieved at $q=3+\frac{9}{\sqrt[3]{2}}-9\sqrt[3]{2}$ ( Fig.\ref{fr:cglp}).
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth, height=0.4\textheight]{CGLP.png}
-\caption{ИСПРАВЬТЕ ПАРАМЕТР НА рис.а УБЕРИТЕ B-D. Dependence of the TH maximal intensity on the parameter q }
+    \includegraphics[width=0.8\textwidth]{CGLP_curve.eps}
+\caption{Dependence of the TH maximal intensity on the parameter q }
 \label{fr:cglp}
 \end{figure}
-Therefore, the phase matching between TH and FW is not the optimal condition for THG because at $\Delta_{31}k=0$ ($q=0$) only $80\%$ of the BW energy converts. Another conclusion following from Fig. \ref{fr:cglp} is that the TH maximal intensity is sufficiently lower for $|q|>>1$, i.e. at the same incident intensity the greater $|\Delta_{21}k|$, the smaller interval of $\Delta_{31}k$ provides the effective THG.
+Therefore, the phase matching between TH and FW is not an optimal condition for THG because at $\Delta_{31}k=0$ ($q=0$) only $80\%$ of the FW energy converts to the TH energy.  We see also in  Fig. \ref{fr:cglp} the abrupt decreasing TH maximal intensity near the optimal negative value of the parameter $q$. With increasing positive phase mismatching $\Delta_{21}k$, the negative value of the phase mismatching  $\Delta_{31}k$ tends to zero. Let us note that the efficiency of THG is the same if we change signs of phase mismatches to opposite ones because the value of parameter $q$ does not change at the same time: for example, $\Delta_{21}k=20,\,\Delta_{31}k=-1$ are changed to $\Delta_{21}k=-20,\,\Delta_{31}k=1$) .
 
-\textcolor{red}
-{Далее не исправлял, но некоторые изменения внесите}
+It should be stressed that the THG based on the proposed mechanism differs from that occurring  in a medium with cubic nonlinear response by absence of  self-modulation process at the trebled frequency  usually decrease frequency conversion processes efficiency (see \eqref{eq:main2}). The cross-modulation affect, arising from FW, three times less in comparison with THG based on cubic nonlinear response. Moreover, certain choice of $\Delta_{31}k$ can decrease the negative influence of pulse self-action  that demonstrate Fig. \ref{fr:cglp} and see below. 
+%\clearpage
 
-\textcolor{red}
-{Текст до пункта 4 нужно переставить в пункт 4 первым подпунктом. Напишите заголовок для него}
+\section*{Computer simulation results.}
 
-\textcolor{ForestGreen}
-{ \textcolor{red}
-{Поставьте параметры расчетов здесь для рис. 3 b-d }
-However, this results are obtained for the modified problem, so they must be verified by the computer simulation of the original problem, which we also present here. First of all, we show that the conversion efficiency of $80\%$ is indeed achieved at phase matching between TH and FW approximately in the section $z=15$ (Fig. \ref{fr:cglp}b \textcolor{red}{ Параметры)}, and we see a good coincidence between solutions of both problems. In contrast to this, the contradiction between two solutions is observed in Fig. \ref{fr:cglp}c \textcolor{red}{ Параметры)}) at theoretically best case $p=3+ \frac{9}{\sqrt[3]{2}}-9\sqrt[3]{2}$, and only $|A_3|^2=0.7$ is achieved. The reason is that this parameter value is a border between two different areas of intensity evolution (see Methods for more details), so in this case the tiny factors (of order $O(\Delta_{21}k^{-2})$ and lower), which were neglected at derivation of the modified problem, play more important role than in other cases. Fortunately, if we slightly shift the parameter $\Delta_{31}k$ towards zero ($\Delta_{31}k=-0.05$ for definiteness), than the THG efficiency sufficiently improves and achieves the value of $93\%$ (Fig. \ref{fr:cglp}d\textcolor{red}{ Параметры)} ).
-}
+\subsection*{Long pulse duration approximation}
 
-\textcolor{ForestGreen}
-{
-Thus, we see that the phase matching is not necessary the best choice. It can be explained by analyzing of the set of the equations \eqref{eq:main2}. We see that the equation with respect to $W$ does not contain the self-modulation term $|W|^2W$, therefore, it is not symmetrical in contrast to the classical model of THG in a medium with cubic nonlinear response, so non-zero phase mismatching between FW and TH partly compensate FW self-modulation and cross-modulation between waves.
-}
+The results, obtained in the frame-work of  the modified problem, are supported below (Fig.\ref{fr:1}) by the computer simulation provided using the original problem with the following parameters $\gamma=1$,   $\alpha=0$ and $\Delta_{21}k=20$. The phase mismatching between waves with FF and trebled frequency ($\Delta_{31}k$) is varied for achieving the corresponding value of the parameter $q$ to realize the THG modes described above. 
 
-\textcolor{ForestGreen}{However, let us pay closer attention to the case $\Delta_{31}k=0$. Here we compare both analytical and numeric solutions of the modified problem with the numeric solution of the original problem. Следующие несколько предложений стоит убрать.}
-\textcolor{blue}
-{
-To verify the solution \eqref{eq:sol} we compare it with the computer simulation results of the problem \eqref{eq:main2}. Since the equation set \eqref{eq:main2} was derived as approximate equations of the problem \eqref{eq:ref1}, so it is necessary to compare the solutions of both problems.} \textcolor{ForestGreen}{Дальше -- нормально.} \textcolor{blue}{ Therefore, in Fig. \ref{fr:1}a we show three solution at \(\gamma=6\) and \(\Delta_{21}k=250\). We see that they coincide with each other until the section \(z=5\).
+In Fig. \ref{fr:1}a the conversion efficiency evolution is depicted if the phase matching between TH and FW ($\Delta_{31}k=0$) occurs. We see that its maximal value ($80\%$) is achieved  in the section $z=15$. Both lines coincide each other with high accuracy.  However, at the phase mismatching $\Delta_{31}k=-0.05979923575$ corresponding to the parameter $q=3+ \frac{9}{\sqrt[3]{2}}-9\sqrt[3]{2}$, the coinciding between both lines occurs only till the pulse propagation distance equaling $z=12.5$ and only the maximal intensity $|A_3|^2=0.7$ is achieved at computing based on the original problem ( Fig. \ref{fr:1}b ). It occurs because this phase mismatching corresponds to value dividing two modes of the frequency up-conversion.  Therefore, for adequate description of the tripling frequency generation, it is necessary either to take into account the next order of the series corresponding to $O (\Delta_{21}k^{-2}) $ or increasing computer simulation accuracy. Its insufficient accuracy leads to the switching between the up-conversion modes because of computation round-off and its accumulation. For confirmation of this hypothesis we compute additionally frequency conversion at phase mismatching which a little bit differs from those. So, at  slightly changing phase mismatching  ($\Delta_{31}k=-0.054$) the THG efficiency increases till up  $94.5\%$ (Fig. \ref{fr:1}c) that is essentially greater than in the previous case. But the difference in solutions appears at much longer distance of the  waves interaction. At further increasing phase mismatching  $\Delta_{31}k=-0.05$ (Fig. \ref{fr:1}d), the frequency conversion efficiency decreases insufficiently ($93\%$), but the coincidence between two solutions improves essentially.
+
 \begin{figure}[h!] 
 \centering 
-\includegraphics[width=0.5\linewidth]{CascadeI}  
-\caption{The TH intensity evolution computed at $(\gamma;\, \Delta_{21} k)=(6;250)$ (a), $(4;100)$ (b), $(8;400)$ (c) using the numerical solution of the problem \eqref{eq:main2} (solid line), \eqref{eq:ref1} (dashed line) and the analytical solution \eqref{eq:sol} (dotted line).}
+\includegraphics[width=0.8\linewidth]{CG_0.eps}  
+\caption{ The TH intensity evolution computed on the base of both original problem (solid line) and the analytical solution of the modified problem (dashed-dotted line) at $\Delta_{31}k=0$ (a), $-0.05979923575$ (b), $-0.054$ (c), $-0.05$ (d).}
 \label{fr:1}
 \end{figure}
-}
 
-\textcolor{blue}{
-Then there is a very little difference between the problem \eqref{eq:ref1} solution and two other solutions, which arises from the difference of the intensity oscillation period for the solutions of both problems. Therefore, the equation set \eqref{eq:main2} possesses a high approximation of the equation, and the formula \eqref{eq:sol} gives an analytical solution of this problem.
-}
+The insets in  Fig. \ref{fr:1}a, c confirms also the partial compensation of the phase nonlinear incursion by the phase mismatching $\Delta_{31}k$. The energy conversion from FW to TH occurs if the phase difference $\varphi$ is negative. In Fig. \ref{fr:1}a this takes place if the distance of laser pulse interaction is less than 15 dimensionless units. Meanwhile, that distance is about $z=45$ in Fig. \ref{fr:1}c. Both mentioned sections of z-coordinate corresponds to the phase difference equal  $\varphi=0$.
 
-\textcolor{blue}{
-As it follows from an analytical consideration, the TH intensity maximal value equals \(0.8\), and this value does not depend on the parameters \(\gamma\) and \(\Delta_{21}k\). To verify this, we depict in Fig. \ref{fr:1}b the computer simulation results for the parameters \(\gamma=4\) and \(\Delta_{21}k=100\). We see that the maximal intensity does not change (this statement is also confirmed by Fig.\ref{fr:1}c). Because the phase mismatching is lower than in the previous case (Fig. \ref{fr:1}c), then the difference between two numerical solutions obtained on the base of the original problem and of the modified (simplified) equations increases. In particular, the numerical solution of the problem \eqref{eq:main2} does not describe tiny oscillations, which are observed for the original problem solution (dashed line). Nevertheless, both approaches predict a high energy conversion efficiency for TH.
-}
+Let's note that with increasing power density of the incident pulse it is necessary accounting for the cubic non-linear response of a medium:  $\alpha \ne 0$ in \eqref{eq:ref1}.  The solution of the corresponding equations shows, that in this case choosing incident FW power density as well as the phase mismatching between FW and TH 
 
-\textcolor{blue}{
-To support that the intensity oscillations period depends on the parameter \(\gamma^2/\Delta_{21}k\) we multiply value of \(\gamma\) by \(2\), and \(\Delta_{21}k\) by \(4\) and depict the computer simulation results in Fig. \ref{fr:1}c. We see that the intensity oscillations periods in Figs. \ref{fr:1}b and \ref{fr:1}c are the same. However, with increasing of the phase mismatching, the approximation of the problem solution is better.
-}
+\begin{equation}
+\label{eq:coef}
+\begin{aligned}
+\alpha=\frac{3\gamma^2}{2\Delta_{21}k},\\  \Delta_{31}k=-\frac{3\gamma^2}{2\Delta_{21}k},
+\end{aligned}
+\end{equation}
+which corresponds, for example, to $q=-1.5$ ($\alpha=0.075,\,\Delta_{31}k=-0.075$ for $\gamma=1,\,\Delta_{21}k=20$), one can eliminate all negative influence of  self- and cross-modulation of interacting waves on the THG efficiency. In physical variables, the first equality is written as follows
 
-\textcolor{blue}
-{
-Thus, the developed analytical solution contains all features of the solution computed on the base of the equation set \eqref{eq:ref1}.
-}
-They show that the modified equations approximate the original ones with high precision, and, what is most important, that at least $50\%$ of the incident energy transfers to the third harmonic (TH) wave.
+\begin{equation}
+\label{eq:coef1}
+\begin{aligned}
+&\chi^{(3)}=(4\pi(\chi^{(2)})^2k Z_n)/(3n^2\Delta_{21}{k}),
+\end{aligned}
+\end{equation}
+here $\Delta_{21} k$ is dimensionless one. So, taking into account $\chi^{(2)}$ from Table \eqref{tab:2}, and $\chi^{(3)}\approx 2-6 10^{-22} m^2/V^2$ from \cite{bib:gan}, and wave-number as $k\approx 2\pi 10^6 m^{-1}$, $ and  n\approx 1.5$ for KDP crystal, we obtain that
+$$
+\Delta_{21}k\approx 10-30,
+$$
+which is close to value that we use in computer simulation.  In this case, the TH intensity, derived from the modified problem, varies as
+$$
+p_3(z)=\frac{\left(\frac{3\gamma^2 z}{2\Delta_{21}k}\right)^2}{1+\left(\frac{3\gamma^2 z}{2\Delta_{21}k}\right)^2}.
+$$
+It means that THG efficiency turns to $100\%$ as $  \frac{3\gamma^2 z}{2\Delta_{21}k}\rightarrow\infty$. 
 
-%\clearpage
-\textcolor{blue}{
-\section{Computer simulation of the frequency tripling.}
-}
-\textcolor{ForestGreen}
-{
-\subsection{SOD influence on the frequency tripling}
-}
-Below we discuss the computer simulation results for the frequency tripling of the optical pulses and at phase matching of THG (\(\Delta_{31}k=0\)), and taking into account the SOD influence, and the group velocity matching: \(\nu_{21}=\nu_{31}=0\). We provide a computer simulation using the set of equations \eqref{eq:ref1} and the set of equations \eqref{eq:main2}. Our aim is a demonstration of the high efficient THG with a smooth shape of a pulse at the trebled frequency and its smooth spectrum. 
+\subsection*{SOD influence on the frequency tripling}
 
-The incident pulse at the FF possesses Gaussian distribution without any chirp:
+Below we discuss an influence of the SOD on the frequency up-conversion efficiency if the incident  pulse at FW possesses Gaussian shape 
 \begin{equation}
 A_{10}(t)=A_{01}e^{-(t-0.5L_t)^2},
 \end{equation}
-where \(A_{01}\) is equal to unity due to chosen dimensionless parameters. However, the parameter \(A_{01}\) will be used in the Conclusion of the paper for the final illustration of the frequency conversion efficiency dependence on the incident pulse intensity.
+where \(A_{01}\) is equal to unity due to chosen dimensionless parameters, and the phase matching between TH and FW (\(\Delta_{31}k=0\)) as well as  group velocity matching (\(\nu_{21}=\nu_{31}=0\)) between interacting waves occur. We compare the computer simulation results obtained using the original problem \eqref{eq:ref1} and the modified problem \eqref{eq:main2} to demonstrate both a validity of the analytical consideration and a possibility for the high efficient THG achievement. It is important that a pulse at the trebled frequency possesses a smooth shape of  and its smooth broadened spectrum.
 
-\textcolor{brown}{R2: Also, there are no indications regarding most of data in the figures.} \textcolor{ForestGreen}{У нас в тексте было (в начале 4 пункта) описание данных на графиках (что к чему относится). Нужно ли добавлять что-то ещё?}
+ 
+It should be emphasized that below the solution of the problem \eqref{eq:ref1}-\eqref{eq:first} is depicted as a solid line while the solution of the modified problem  \eqref{eq:main2}-\eqref{eq:ini2} is shown as a dotted line.  Numbers \(1,\,2,\,3\) in the Figs. denote FW, SH, and TH, respectively. In some cases, we also demonstrate the applicability of the analytical solution that is depicted as a dashed line. We pay a special attention to the pulses spectra and depict the initial spectrum distributions as well as the FW initial pulse shape in some Figs. using the solid line with triangles.
 
-It should be emphasized that below in paragraphs \ref{par:nor} and \ref{par:an} the solution of the problem \eqref{eq:ref1}-\eqref{eq:first} is depicted as a solid line while the solution of the modified problem  \eqref{eq:main2}-\eqref{eq:ini2} is shown as a dotted line.  Numbers \(1,\,2,\,3\) in the Figs. denote FW, SH, and TH, respectively. In some cases, we also demonstrate the applicability of the analytical solution derived in the long pulse duration approximation and this solution is depicted as a dashed line. We pay an attention to the pulses spectra and depict the initial spectrum distributions (as well as the FW initial pulse shape) in some Figs. via the solid line with triangles.
 
-\subsection{Normal dispersion of a medium at FW wavelength}
+\paragraph*{Normal dispersion $(D_j<0)$ of a medium at FW wavelength }
 \label{par:nor}
-First of all, we consider the frequency tripling of the pulse with wavelength \(\lambda=800\,nm\) and propagating in a BBO crystal with the normal dispersion, which corresponds in our notations to negative values of the dimensionless SOD coefficients. In Fig. \ref{fr:c1_1}a-c the pulse shapes are depicted for the frequency upconversion at a relatively small phase mismatching between SH and FW (\(\Delta_{21}k=20\)) and at the incident pulse duration being about \(100fs\). It should be stressed that a positive sign of phase mismatching \(\Delta_{21}k\) corresponds to the FW pulse compression under its propagation in a medium with the normal SOD if the THG is not essential.
+We note that in our notations a negative value of the dimensionless SOD coefficient corresponds to the normal dispersion of a medium. Below we consider the frequency tripling of the incident pulse with wavelength \(\lambda=800\,nm\) and  duration  \(100fs\) and propagating in a BBO crystal. In Fig. \ref{fr:c1_1}a-c the pulse shapes are depicted for the frequency up-conversion at the phase mismatching between SH and FW equaling \(\Delta_{21}k=20\) . It should be stressed that a positive sign of phase mismatching \(\Delta_{21}k\) corresponds to the FW pulse compression if it propagates in a medium with the normal SOD and the THG is not under consideration.
 
-We see a good coincidence between the FW and TH pulse shapes, computed on using the original problem solution and the modified one, until the section \(z=13\). Despite a medium possesses only the quadratic nonlinearity (\(\alpha=0\)), the TH intensity is high: it achieves \(0.75\) dimensionless units at the pulse center. This growth accompanies by the spectral broadening of the FW and TH pulses in comparison with the incident FW pulse spectrum. However, the FW pulse spectrum has two local minimums in this section of a medium. 
+We see a good coincidence between the FW and TH pulse shapes, computed  using the original problem and the modified one, until the propagation distance \(z=13\) (Fig. \ref{fr:c1_1}a-f) . In this section the TH intensity is enough high: it achieves \(0.75\) dimensionless units at the pulse center. Despite a medium possesses only the quadratic non-linearity (\(\alpha=0\)),  the THG  accompanies by the spectral broadening of  both pulses in comparison with the incident FW pulse spectrum. Therefore, it is possible for further compression of the TH pulse (Fig. \ref{fr:c1_1}e). Wee see smooth spectrum of the TH \ref{fr:c1_1}d) meanwhile the FW pulse spectrum has two additional local minimums, which appear approximately in the vicinity of section 10 and it means that the sub-pulses appears at the FF (Fig. \ref{fr:c1_1}b). Under further propagation they lead to growing FW intensity with increasing  propagation distance (Fig. \ref{fr:c1_1}c,e). As a result, the conversion efficiency in the end of the propagation distance achieves \(51\%\) (\ref{fr:c1_1}f).
 
-After the distance equals 10 units (Fig. \ref{fr:c1_1}e), the FW intensity begins its growth. It happens due to the sub-pulses formation at the FF. Indeed, in the section \(z=7\) (Fig. \ref{fr:c1_1}a) the FW pulse shape is smooth, and it becomes close to plate distribution near the pulse center. After this section of a medium, the intensity grows in this part of the pulse (Fig. \ref{fr:c1_1}b), and its increasing becomes very remarkable (Fig. \ref{fr:c1_1}c). 
-
-The conversion efficiency achieves \(51\%\) and, at the same time, the TH spectra (Fig. \ref{fr:c1_1}d)  has smooth shape without any local minima. We also want to note that the analytical solution perfectly describes the waves interaction until the section \(z=7.5\). Then we see that the FW pulse self-focusing and TH efficiency, predicted by the theory, are slightly higher than the corresponding values obtained from computer simulation results. Nevertheless, the equation \eqref{eq:main2} correctly describes a self-focusing of the pulses, as well as the presence of the effective cubic nonlinearity under waves interaction occurring at the cascading SHG.
+ We also want to note that the analytical solution perfectly describes the waves interaction until the section \(z=7.5\). Then we see that the FW pulse self-focusing and TH efficiency, predicted by the theory, are slightly higher than the corresponding values obtained from computer simulation results. Nevertheless, the equation \eqref{eq:main2} correctly describes a presence of the effective cubic non-linearity under waves interaction occurring at the cascading SHG. 
+ 
 \begin{figure}[h!] 
 \centering 
-\includegraphics[width=\linewidth]{Cascade1_1}  
-\caption{Pulse shapes in the sections \(z=7\) (a), \(10\) (b), \(13\) (c), and FW and TH spectra in the section \(z=13\) (d), and pulse intensities evolution at their centers (e) and the frequency conversion efficiency evolution (f) along \(z\)-coordinate computed for the parameters $\gamma=1,\, \Delta_{21} k=20,\, D_1=-0.0032,\, D_2=-0.0083,\, D_3=-0.0199.$ } 
+\includegraphics[width=\linewidth]{Cascade1_1-2}  
+\caption{Pulse shapes in the sections \(z=7\) (a), \(10\) (b), \(13\) (c), and FW and TH spectra in the section \(z=13\) (d); pulse intensities evolution at their centers (e, g) and the frequency conversion efficiency evolution (f, h) along \(z\)-coordinate computed for the parameters $\gamma=1,\,  D_1=-0.0032,\, D_2=-0.0083,\, D_3=-0.0199$ and \,$\Delta_{21} k=20$ (e, f), -20 (g,h). Solid lines with triangles refer to incident pulse FW and its spectrum. Solid lines denote the original   problem solution; dotted lines --  the solution of modified problem, dashed lines -- the analytical solution} 
 \label{fr:c1_1}
 \end{figure}
 
-If the sign of the phase mismatching between FW and SH is negative (\(\Delta_{21}k=-20\)), then the energy conversion from the FW to TH also occurs with high efficiency (Fig.\ref{fr:c1_2}). Nevertheless, there are new essential features, which accompanies this process. 
-\begin{figure}[h!] 
-\centering 
-\includegraphics[width=0.9\linewidth]{Cascade1_2}  
-\caption{Pulse shapes (a), FW and TH spectra (b) in the section \(z=30\), and pulse intensities evolution at their centers (c) and the frequency conversion efficiency evolution (d) along \(z\)-coordinate computed for the parameters $\gamma=1,\, \Delta_{21} k=-20,\, D_1=-0.0032,\, D_2=-0.0083,\, D_3=-0.0199.$} 
-\label{fr:c1_2}
-\end{figure}
-So, this sign of the phase mismatching corresponds to FW pulse decompression due to induced cubic nonlinear response in a medium with normal dispersion. Therefore, the pulse duration of the FW and TH is greater than those at the positive phase mismatching (compare Fig. \ref{fr:c1_2} and Fig.\ref{fr:c1_1}). However, despite the FW pulse decompression, the bandwidth of the TH pulse spectrum is greater than the FW incident pulse spectrum. It means that the essential spectral broadening of the TH pulse occurs and this pulse can be additionally compressed. Moreover, the energy conversion reaches the value of about \(60\%\) at increased crystal length in comparison with the previous case: the crystal length must be about \(3\,cm\). Other features of the THG process are similar to the generation process at the positive phase mismatching.
+\textcolor{ForestGreen}{In contrast to the long pulse duration approximation, the sign of $\Delta_{21}k$ influences on the frequency conversion process. So, } if the sign of the phase mismatching between FW and SH is negative (\(\Delta_{21}k=-20\)), then the energy conversion from the FW to TH also occurs with high efficiency (Fig.\ref{fr:c1_1} g-h). However, this sign of the phase mismatching corresponds to the FW pulse decompression due to induced cubic nonlinear response in a medium with a normal dispersion. As a result, the pulse duration of the FW and TH is greater than those at the positive phase mismatching (compare Fig. \ref{fr:c1_1}g-h and Fig.\ref{fr:c1_1}a-f). Nevertheless, a bandwidth of the TH pulse spectrum is also greater than those for the FW incident pulse. The energy conversion efficiency reaches the value of about \(68\%\) at increased crystal length in comparison with the previous case: a length of the current crystal  must be about \(3\,cm\). Other features of the THG are similar to the frequency up-conversion at the positive phase mismatching between the FW and TH. We can see also that the modified equations describe the interaction of waves with high accuracy.
 
-\subsection{Anomalous dispersion of a medium at FW wavelength}
+\paragraph*{Anomalous dispersion $(D_1>0) $ of a medium at FW wavelength}
 \label{par:an}
-Let us briefly discuss THG in a medium with the anomalous dispersion occurring at the frequency of FW. Therefore, the SOD coefficient \(D_1\) is positive. We consider a propagation of the incident pulse with duration about \(100fs\) and with wavelength about \(1064nm\) in KDP crystal (see, for instance, \cite{bib:ri}). If \(\Delta_{21}k>0\) that corresponds to decompression of the FW pulse and compression of the pulse at trebled frequency, then the efficiency of FW energy conversion to the TH achieves about \(60\%\) in the section \(z=15\) (Fig. \ref{fr:c1_11}) and it is accompanied with TH pulse good shape and its broadened spectrum in comparison with the incident pulse spectrum at the FF. We see that the FW pulse shape has three intensity maxima and possesses smaller intensity at the pulse center in comparison with its value occurring at the pulse propagation in a medium possessing the normal dispersion at the FF. Nevertheless, we can see in Fig. \ref{fr:c1_11} that the FW pulse spectrum is more broadened in comparison with the incident pulse spectrum.
+
+Let us briefly discuss the THG in a medium possessing anomalous dispersion at the frequency of FW. For example, this occurs  if the incident pulse with duration  \(100fs\) and wavelength \(1064nm\) propagates in KDP crystal. At the positive phase mismatching between FW and SH  (\(\Delta_{21}k>0\)), the FW pulse decompresses  and  of the pulse at trebled frequency compresses at their propagation. In this case, the efficiency of FW energy conversion to the TH energy achieves about \(60\%\) in the section \(z=15\) (Fig. \ref{fr:c1_11}a-d). The THG is accompanied by  TH pulse smooth shape and broadening its  spectrum in comparison with the incident pulse spectrum at the FF. In turn, the FW pulse shape has three intensity maximums and possesses smaller intensity at the pulse center in comparison with its value occurring at the pulse propagation in a medium possessing the normal dispersion at the FF. Nevertheless, we can see in Fig. \ref{fr:c1_11}b that the FW pulse spectrum is broadened also.
 
 \begin{figure}[h!] 
 \centering 
-\includegraphics[width=0.9\linewidth]{Cascade1_11}  
-\caption{Pulse shapes (a), and FW and TH spectra (b) in the section \(z=15\), and pulse intensities evolution at their center (c) and the frequency conversion efficiency evolution (d) along \(z\)-coordinate computed for the parameters  $\gamma=1,\, \Delta_{21} k=20,\, D_1=0.0006,\, D_2=-0.0035,\, D_3=-0.0062.$} 
+\includegraphics[width=0.9\linewidth]{Cascade1_11-12}  
+\caption{Pulse shapes (a, e), their spectra (b, f) in the section \(z=15\) (a, b), 30 (e, f); pulse intensities evolution at their center (c, g) and the frequency conversion efficiency evolution (d, h) along \(z\)-coordinate computed for the parameters  $\gamma=1,\,  D_1=0.0006,\, D_2=-0.0035,\, D_3=-0.0062$ and  $\Delta_{21} k=20$ (a-d), -20 (e-h). \, Solid lines denote the solution of the original problem; dotted lines -- solution of the modified problem. 
+}
 \label{fr:c1_11}
 \end{figure}
 
-If the phase mismatching between FW and SH is negative (\(\Delta_{21}k<0\)), then the pulse compression at FF occurs, and decompression of the SH and TH pulses is observed. This leads to high-effective THG (Fig.\ref{fr:c1_12}): more than \(80\%\) of the FW energy converts to the TH wave! However, the TH intensity is less than its value at the positive phase mismatching \(\Delta_{21}k\), and the TH spectrum is smooth and broadened.
+If the phase mismatching between FW and SH is negative (\(\Delta_{21}k<0\)), then the pulse compression at FF occurs, and decompression of the SH and TH pulses is observed. This leads to high-effective THG (Fig.\ref{fr:c1_11}e-h): more than \(80\%\) of the FW energy converts to the TH wave in the section  $z=30$ of a medium. However, the TH intensity is less than its value at the positive phase mismatching \(\Delta_{21}k\). Nevertheless, the TH spectrum is smooth and  broadened essentially.
+\section*{Conclusion and remarks}
 
-\begin{figure}[h!] 
-\centering 
-\includegraphics[width=0.9\linewidth]{Cascade1_12}  
-\caption{Pulse shapes (a), and FW and TH spectra (b) in the section \(z=30\), and pulse intensities evolution at their center (c), and the frequency conversion efficiency evolution (d) along \(z\)-coordinate computed for the parameters  $\gamma=1,\, \Delta_{21} k=-20,\, D_1=0.0006,\, D_2=-0.0035,\, D_3=-0.0062.$} 
-\label{fr:c1_12}
-\end{figure}
-
-\section{Conclusion and remarks}
+We have proposed a new physical scheme of THG based on cascading SHG, which leads to observing of the non-linear processes inherent  cubic nonlinear response. Therefore, the high-effective frequency tripling is possible for laser pulse or beam with the incident power density at which  the quadratic nonlinear response is observed.   A necessary length of a crystal, at which an efficient THG occurs, depends on the phase mismatching between the SH and FW and can be changed from 1.0 cm to 20 cm. It can be decreased with increasing power density of the incident pulse at FF.  THG process is accompanied by broadening  of the TH pulse spectrum that leads to possibility of  its further  compression.
+Let's note that if the cubic susceptibility occurs then it is possible to compensate an influence of the pulse self- and cross-modulation on the frequency up-conversion by choosing the phase mismatching between interacting waves.
 
 
-\textcolor{brown}{R1:Since the authors perform numerical simulations with short pulses, there are self- and cross-phase modulations and dispersion-induced effects, which complicate the frequency conversion phenomena. In order to clarify the basic properties, e.g., how the THG efficiency depends on the phase mismatch for SHG and that for SFG, the authors should perform numerical simulations with the continuous wave input or for the longer pulse input. After clarifying the fundamental properties, the authors may proceed to study the THG process with shorter pulses.}
-\textcolor{ForestGreen}{Добавил расчёты в приближении длинных импульсов, а также зависимости от фазовых расстроек (пунет 3.3). Наверное, этого должно быть достаточно.}
+Using multi-scale method, we have derived the equations, named as  modified ones, describing frequency tripling due to cascading SHG and showed that they contain the terms responsible for phenomena inherent a medium with the cubic nonlinear response. Importantly, the equations do not contain the term responsible for the TH self-modulation that leads to enhancement of the up-conversion efficiency .  An analytical solution of the modified equations was developed in the framework of the long pulse duration approximation at using the derived integrals of motion. A validity of the modified equations is confirmed by computer simulation results obtained using the original Schr\"{o}dinger equations.
 
-\textcolor{brown}{R1:In page 3, lines 2-3, the authors describe as “the third (new) process of the frequency tripling is based on the frequency doupling at big mismatching.” However, it does not explain the mechanism of THG under large phase mismatching condition. The authors should give reasonable explanation on the mechanism. Why is THG generated under the large phase mismatching condition for SHG?} \textcolor{ForestGreen}{По поводу физического обоснования я пока ничего не добавлял. В статье ди Трапани, например, есть скорее описание: слагаемое $|A|^2A$ возникает из последовательного действия процессов генерации второй гармоники, за которым следует процесс генерации разностной частоты. Соответственно, в нашем случае вместо генерации разностной частоты генерация суммарной частоты. Если такого достаточно, то я могу это добавить.}
+We have also investigated the influence of other parameters on the pulse interaction: SOD and the phase mismatching between TH and FW.  We shown that the high-effective  THG  is achieved for a medium possessing both anomalous and normal dispersion at the FF. Choice of the phase-mismatching between   FW and SH allows one to govern the regime of the laser pulse compression with FF. Because only quadratic nonlinear effects are required for THG through the cascading SHG then the effective frequency tripling  is possible for incident pulse with  picoseconds or nanoseconds duration.  
 
-
-\textcolor{brown}{R1:The authors should compare the THG efficiency of the proposed scheme with that of the conventional scheme of phase-matched SHG followed by phase-matched SFG. The authors should also present the advantages of the proposed scheme compared with the conventional scheme. Is it true that the proposed scheme gives higher efficiency? If so, why is it?} \textcolor{ForestGreen}{Вообще-то, у нас уже был небольшой обзор других подходов и описание наших преимуществ. В частности, основная работа – работа Крэкстона – по генерации в двух кристаллах есть. Максимальная возможная теоретическая эффективность в этой работе – $100\%$ (правда, по-видимому никогда не достигнутая), так что в этом вопросе мы даже несколько проигрываем (у нас около $93\%$). Так что если говорить о преимуществах нашего подхода, то это прежде всего простота. Нам не требуются два кристалла, или кристалл со сложной структурой, или дополнительные аксессуары, при этом обещанная эффективность высока.}
-
-
-
-
-\textcolor{brown}{R1:The manuscript should be re-organized to focus on the principle and the basic properties of the proposed scheme. It is much more important to present them than to present complicated behaviors induced by self- and cross-phase modulations and dispersion-induced effects.}
-\textcolor{ForestGreen}{До некоторой степени переделал, влияние дисперсии находится теперь в конце, но, вероятно, нужно править ещё.}
-
-
-\textcolor{brown}{R1: The supplementary information contains so many numerical simulations which does not seem to be necessary to support the materials presented in the main manuscript} \textcolor{ForestGreen}{Пока не менял. Там, в частности есть результаты по модуляционной неустойчивости, которые с одной стороны вошли в новую статью, с другой стороны важны и для этой, поскольку связаны с эффективностью преобразования. Также есть результаты, которые не вошли в новую статью (поскольку относятся к ненулевым расстройкам групповых скоростей).
-По поводу большого объёма, насколько я помню, мы собирались написать что-то вроде «мы считаем, что эти результаты важны, но можем их убрать отсюда».
-}
-
-We have proposed a new physical scheme of THG based on cascading SHG, which leads to an appearance of the induced cubic nonlinear response of a crystal possessing a quadratic susceptibility only. Thus, the frequency trebling is possible under the conditions corresponding to the frequency doubling of the laser pulse or beam. The generation process is not restricted by the incident pulse duration. A necessary length of a crystal, at which an efficient THG is observed, depends on the phase mismatching between the SH and FW and can be changed from 1.0 cm to 20 cm. 
-
-Using multiscale method, we have derived the equations (named as modified equations) describing frequency trebling due to cascading SHG and showed that they contain the terms responsible for the cubic nonlinear response, which results in THG as well as FW self-modulation, and also FW and TH cross-modulation. Essentially, the equations do not contain the term responsible for the TH self-modulation that is very important for practice.A validity of the modified equations is confirmed by comparing of solutions of both sets of the Schr\"{o}dinger equations: original ones and modified ones. We developed an analytical solution of the modified equations in the framework of the long pulse duration approximation at using the derived integrals of motion. This solution allows us to estimate a maximal frequency conversion efficiency as well as its dependence on the parameters of interacting waves.
-
-We have also investigated the influence of other parameters on the pulse interaction: SOD, and the phase mismatching between TH and FW, and GVM between both SH and FW as well as TH and FW.  We show that the high THG efficiency is achieved for both types of a medium: anomalous and normal dispersion at the FF. The GVM between SH and FW pulses influences only the pulse shapes without strong changing of the THG efficiency. In contrast, the GVM between TH and FW influences remarkably the frequency conversion process. To compensate this negative influence, we have proposed and discussed some physical schemes for three-waves interaction. Moreover, since only quadratic nonlinear effects are required for THG through the cascading SHG, it is possible to use longer pulses with duration of picoseconds or nanoseconds to decrease negative GVM and SOD influence. Another way is using of so-called "tilted pulses" \cite{bib:tilt1,bib:tilt2} to compensate SOD effects.
-
-it is important for practice that the proposed technique for optical frequency conversion can be used for other frequency conversion problems, such as Fourth Harmonic Generation or even Fifth Harmonic Generation or wave with difference frequency.
+In our opinion, the proposed technique for optical frequency conversion can be used for other frequency conversion problems, such as Fourth Harmonic Generation or even Fifth Harmonic Generation or  a generation of wave with difference frequency.
 
 \subsection*{Acknowledgements}
 D.M.K. and M.V.F. thank the Russian Science Foundation (Grant 19-11-00113)
 
+\textcolor{brown}{R1: The supplementary information contains so many numerical simulations which does not seem to be necessary to support the materials presented in the main manuscript} \textcolor{red}{сделали.}
+
+\textcolor{brown}{R1:In page 3, lines 2-3, the authors describe as “the third (new) process of the frequency tripling is based on the frequency doubling at big mismatching.” However, it does not explain the mechanism of THG under large phase mismatching condition. The authors should give reasonable explanation on the mechanism. Why is THG generated under the large phase mismatching condition for SHG?}
+\textcolor{red}{ сделано}.
+
+\textcolor{brown}{R1:The authors should compare the THG efficiency of the proposed scheme with that of the conventional scheme of phase-matched SHG followed by phase-matched SFG. The authors should also present the advantages of the proposed scheme compared with the conventional scheme. Is it true that the proposed scheme gives higher efficiency? If so, why is it?} \textcolor{red}{ сделали.}. 
 
 
 \textcolor{brown}{R1:This part should summarize the materials presented in the former sections. The authors should not add new numerical simulations here.} \textcolor{red}{сделали}.
@@ -747,10 +686,22 @@ D.M.K. and M.V.F. thank the Russian Science Foundation (Grant 19-11-00113)
 \textcolor{brown}{R1:The authors fail to present the essential conclusions of the numerical study on the proposed scheme (THG based on cascading SHG) in Abstract nor in Conclusion. What is the important new finding?} \textcolor{red}{сделали}.
 
  \textcolor{brown}{R2: Many strange descriptions appear in the manuscript, like “in. 10” (the last sentence, in the section of Introduction), including English itself.} \textcolor{red}{ Сделали}
+ 
+ \textcolor{brown}{R2: Also, there are no indications regarding most of data in the figures.}
+ \textcolor{red}{ Сделали}
+ 
+\textcolor{brown}{R1:The manuscript should be re-organized to focus on the principle and the basic properties of the proposed scheme. It is much more important to present them than to present complicated behaviors induced by self- and cross-phase modulations and dispersion-induced effects.}
+\textcolor{red}{ Сделали} 
+ 
+ 
+ 
+\textcolor{brown}{R1:Since the authors perform numerical simulations with short pulses, there are self- and cross-phase modulations and dispersion-induced effects, which complicate the frequency conversion phenomena. In order to clarify the basic properties, e.g., how the THG efficiency depends on the phase mismatch for SHG and that for SFG, the authors should perform numerical simulations with the continuous wave input or for the longer pulse input. After clarifying the fundamental properties, the authors may proceed to study the THG process with shorter pulses.}
+ \textcolor{red}{Сделали}
+
 
 \subsection*{Data availability}
 The authors declare that all data supporting the findings of this study are available
-within this article and its Supplementary Information files.\textcolor{red}{сделали}.
+within this article and its Supplementary Information files.
 
 \subsection*{Code availability}
 The custom computer code used to analyse and model the observational data here is available from the corresponding author on request, for the purpose of repeating 
@@ -765,51 +716,53 @@ The authors declare no competing interests.
 \subsection*{Correspondence and request for materials}
 should be addressed to V.A.T. (trofimov@scut.edu.cn)
 
-%\clearpage
-\begin{thebibliography}{0}
-\bibitem{bib:n1} Karamzin, Yu.N., Sukhorukov, A.P. Nonlinear interaction of diffracted light beams in a medium with quadratic nonlinearity: mutual focusing of beams and limitation on the efficiency of optical frequency converters. \textit{JETP Lett.} \textbf{20}, 339 (1974).
-\bibitem{bib:n2} Torruellas, W.E. et al. Observation of two-dimensional spatial solitary waves in a quadratic medium. \textit{Physical review letters} \textbf{74}, 5036 (1995).
-\bibitem{bib:n3} Schiek, R., Baek, Y., Stegeman, G. I. One-dimensional spatial solitary waves due to cascaded second-order nonlinearities in planar waveguides. \textit{Physical Review E} \textbf{53}, 1138 (1996).
-\bibitem{bib:n4} Fuerst, R. A. et al. Spatial modulational instability and multisolitonlike generation in a quadratically nonlinear optical medium. \textit{Physical review letters} \textbf{78}, 2756 (1997).
-\bibitem{bib:n5} Costantini, B. et al. Collisions between type II two-dimensional quadratic solitons. \textit{Optics letters} \textbf{23}, 424-426 (1998).
-\bibitem{bib:n6} Di Trapani, P. et al. Observation of temporal solitons in second-harmonic generation with tilted pulses. \textit{Physical review letters} \textbf{81},570 (1998).
-\bibitem{bib:n7} Liu, X., Qian, L. J., Wise, F. W. Generation of optical spatiotemporal solitons. \textit{Physical review letters} \textbf{82}, 23 (1999).
-\bibitem{bib:n9} Kim, D. H., Kang, J. U., Khurgin, J. B. Cascaded Raman self-frequency shifted soliton generation in an Er/Yb-doped fiber amplifier. \textit{Applied physics letters} \textbf{81}, 2695 (2002).
-\bibitem{bib:n10} Kharenko, D. S. et al. Cascaded generation of coherent Raman dissipative solitons \textit{Optics letters} \textbf{41}, 175 (2016).
-\bibitem{bib:n8} Buryak, A. V. et al. Optical solitons due to quadratic nonlinearities: from basic physics to futuristic applications. \textit{Physics Reports} \textbf{370}, 63 (2002).
-\bibitem{bib:n11} Cheng, Z., Fu, H. Y., Li, Q. Cascaded photonic crystal fibers for three stage non-integer order soliton compression. \textit{Optical Communications and Networks}, 1 (2017).
-\bibitem{bib:n12} Bache, M., Wise, F. W. Type-I cascaded quadratic soliton compression in lithium niobate: Compressing femtosecond pulses from high-power fiber lasers. \textit{Physical Review A} \textbf{81}, 053815 (2010).
-\bibitem{bib:n13} Zeng, X. et al. Adiabatic femtosecond pulse compression and control by using quadratic cascading nonlinearity \textit{Nonlinear Optics: Technologies and Applications. -- International Society for Optics and Photonics} \textbf{6839}, 68390B (2008).
-\bibitem{bib:n14} Ashihara, S. et al. Soliton compression of femtosecond pulses in quadratic media. \textit{JOSA B} \textbf{19}, 2505 (2002).
-\bibitem{bib:n15} Li, Q., Kutz, J. N., Wai, P. K. A. Cascaded higher-order soliton for non-adiabatic pulse compression. \textit{JOSA B} \textbf{27}, 2180 (2010).
-\bibitem{bib:n16} Bache, M. et al. Limits to compression with cascaded quadratic soliton compressors. \textit{Optics express} \textbf{16}, 3273 (2008).
-\bibitem{bib:n17} Moses, J., Wise, F. W. Soliton compression in quadratic media: high-energy few-cycle pulses with a frequency-doubling crystal. \textit{Optics letters} \textbf{31}, 1881 (2006).
-\bibitem{bib:n18} \v{S}uminas. R. et al. Spatiotemporal light bullets and supercontinuum generation in $\beta$-BBO crystal with competing quadratic and cubic nonlinearities \textit{Optics letters} \textbf{41}, 2097 (2016).
-\bibitem{bib:n19} Conti, C., et al. Effective lensing effects in parametric frequency conversion. \textit{JOSA B} \textbf{19},  852 (2002).
-\bibitem{bib:n20} Trofimov, V. A., Lysak T. M. Strong self-focusing of axial symmetric laser beam due to quadratic nonlinearity. \textit{JOSA B} \textbf{29}, 1731 (2012).
-\bibitem{bib:n21} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part I. Efficient generation in optical fibers. \textit{Computational Mathematics and Modeling} \textbf{19}, 333 (2008).
-\bibitem{bib:n22} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part II. Suppression of intensity fluctuations in a quadratic-nonlinearity medium \textit{Computational Mathematics and Modeling} \textbf{20}, 1 (2009).
-\bibitem{bib:n23a} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part III. Propagation of pulses in a bulk medium. \textit{Computational Mathematics and Modeling} \textbf{20}, 101 (2009).
-\bibitem{bib:n23} Lysak, T. M., Trofimov, V. A. Highly efficient SHG of a sequence of laser pulses with a random peak intensity and duration. \textit{Optics and Spectroscopy} \textbf{107}, 399 (2009).
-\bibitem{bib:n24} Nayfeh, A.H. Introduction to perturbation techniques.\textit{New York: John Wiley \&Sons} (1993) 519p.
-\bibitem{bib:t4a} Seka, W., Jacobs, S. D., Rizzo, J. E., Boni, R., Craxton, R. S. Demonstration of high efficiency third harmonic conversion of high power Nd-glass laser radiation. Optics Communications, \textbf{34}, 469 (1980).
-\bibitem{bib:t4} Craxton, R. S. Theory of high efficiency third harmonic generation of high power Nd-glass laser radiation. \textit{Optics Communications} \textbf{34}, 474 (1980).
 
-\bibitem{bib:t3} Qi, H. et al. Cascaded third-harmonic generation with one KDP crystal. \textit{Optics letters} \textbf{41} 5823 (2016).
-\bibitem{bib:t1} Banks, P. S., Feit, M. D., Perry, M. D. High-intensity third-harmonic generation. \textit{JOSA B} \textbf{19}, 102 (2002).
-\bibitem{bib:t2} Zhu, S. N., Zhu, Y. Y., Ming, N. B. Quasi-phase-matched third-harmonic generation in a quasi-periodic optical superlattice. \textit{Science} \textbf{278}, 843 (1997)
-\bibitem{bib:t5} Zhang, Tiejun, Yoshiaki Kato, and Hiroyuki Daido. "Efficient third-harmonic generation of a picosecond laser pulse with time delay." IEEE journal of quantum electronics 32.1 (1996): 127-136.
-\bibitem{bib:ri} https://refractiveindex.info
-\bibitem{bib:n26} Zernike, F.  Refractive Indices of Ammonium Dihydrogen Phosphate and Potassium Dihydrogen Phosphate between 2000 $\hat{A}$ and $1.5\mu$. \textit{JOSA} \textbf{54}, 1215 (1964).
-\bibitem{bib:c1} Tamo\v{s}auskas, G. et al. Transmittance and phase matching of BBO crystal in the \(3 -- 5 \mu m\) range and its application for the characterization of mid-infrared laser pulses. \textit{Optical Materials Express} \textbf{8}, 1410 (2018).
-\bibitem{bib:c2} Chen, C. et al. Improved Sellmeier Equations and Phase-Matching Characteristics in Deep-Ultraviolet Region of ${\hbox {KBe}} _ {2}{\hbox {BO}} _ {3}{\hbox {F}} _ {2} $ Crystal. \textit{IEEE Journal of Quantum Electronics} \textbf{44}, 617 (2008).
-\bibitem{bib:c3} Chen, C. et al. Deep UV nonlinear optical crystal: $\hbox{RbBe}_2(\hbox{BO}_3)\hbox{F}_2$. \textit{JOSA B} \textbf{26}, 1519 (2009).
-\bibitem{bib:c4} Eckardt, R. C., et al. Absolute and relative nonlinear optical coefficients of KDP, KD*P, $\hbox{BaB}_2\hbox{O}_4, \hbox{LiIO}_3, \hbox{MgO: LiNbO}_3$ and KTP measured by phase-matched second-harmonic generation. \textit{IEEE Journal of Quantum Electronics} \textbf{26}, 922 (1990).
-\bibitem{bib:c5} Chen, C., et al. The vacuum ultraviolet phase-matching characteristics of nonlinear optical ${\hbox {KBe}} _ {2}{\hbox {BO}} _ {3}{\hbox {F}} _ {2} $. \textit{Applied physics letters} \textbf{68}, 2930 (1996).
-\bibitem{bib:tilt1} Martinez, O. E., Gordon, J. P., Fork, R. L. Negative group-velocity dispersion using refraction \textit{JOSA A}, \textbf{1} 1003 (1984).
-\bibitem{bib:tilt2} Martinez, O. E. Grating and prism compressors in the case of finite beam size. \textit{JOSA B} \text{3}, 929 (1986).
-\bibitem{bib:np} http://www.numpy.org
-\bibitem{bib:n25} Geusic, J. E., Marcos, H. M., Van Uitert, L. Laser oscillations in Nd-doped yttrium aluminum, yttrium gallium and gadolinium garnets. \textit{Applied Physics Letters} \textbf{4}, 182 (1964).
-\end{thebibliography}
+%\clearpage
+
+\bibliographystyle{elsarticle-num}
+\bibliography{sample}
+% \begin{thebibliography}{0}
+% \bibitem{bib:n1} Karamzin, Yu.N., Sukhorukov, A.P. Nonlinear interaction of diffracted light beams in a medium with quadratic nonlinearity: mutual focusing of beams and limitation on the efficiency of optical frequency converters. \textit{JETP Lett.} \textbf{20}, 339 (1974).
+% \bibitem{bib:n2} Torruellas, W.E. et al. Observation of two-dimensional spatial solitary waves in a quadratic medium. \textit{Physical review letters} \textbf{74}, 5036 (1995).
+% \bibitem{bib:n3} Schiek, R., Baek, Y., Stegeman, G. I. One-dimensional spatial solitary waves due to cascaded second-order nonlinearities in planar waveguides. \textit{Physical Review E} \textbf{53}, 1138 (1996).
+% \bibitem{bib:n4} Fuerst, R. A. et al. Spatial modulational instability and multisolitonlike generation in a quadratically nonlinear optical medium. \textit{Physical review letters} \textbf{78}, 2756 (1997).
+% \bibitem{bib:n5} Costantini, B. et al. Collisions between type II two-dimensional quadratic solitons. \textit{Optics letters} \textbf{23}, 424-426 (1998).
+% \bibitem{bib:n6} Di Trapani, P. et al. Observation of temporal solitons in second-harmonic generation with tilted pulses. \textit{Physical review letters} \textbf{81},570 (1998).
+% \bibitem{bib:n7} Liu, X., Qian, L. J., Wise, F. W. Generation of optical spatiotemporal solitons. \textit{Physical review letters} \textbf{82}, 23 (1999).
+% \bibitem{bib:n9} Kim, D. H., Kang, J. U., Khurgin, J. B. Cascaded Raman self-frequency shifted soliton generation in an Er/Yb-doped fiber amplifier. \textit{Applied physics letters} \textbf{81}, 2695 (2002).
+% \bibitem{bib:n10} Kharenko, D. S. et al. Cascaded generation of coherent Raman dissipative solitons \textit{Optics letters} \textbf{41}, 175 (2016).
+% \bibitem{bib:n8} Buryak, A. V. et al. Optical solitons due to quadratic nonlinearities: from basic physics to futuristic applications. \textit{Physics Reports} \textbf{370}, 63 (2002).
+% \bibitem{bib:n11} Cheng, Z., Fu, H. Y., Li, Q. Cascaded photonic crystal fibers for three stage non-integer order soliton compression. \textit{Optical Communications and Networks}, 1 (2017).
+% \bibitem{bib:n12} Bache, M., Wise, F. W. Type-I cascaded quadratic soliton compression in lithium niobate: Compressing femtosecond pulses from high-power fiber lasers. \textit{Physical Review A} \textbf{81}, 053815 (2010).
+% \bibitem{bib:n13} Zeng, X. et al. Adiabatic femtosecond pulse compression and control by using quadratic cascading nonlinearity \textit{Nonlinear Optics: Technologies and Applications. -- International Society for Optics and Photonics} \textbf{6839}, 68390B (2008).
+% \bibitem{bib:n14} Ashihara, S. et al. Soliton compression of femtosecond pulses in quadratic media. \textit{JOSA B} \textbf{19}, 2505 (2002).
+% \bibitem{bib:n15} Li, Q., Kutz, J. N., Wai, P. K. A. Cascaded higher-order soliton for non-adiabatic pulse compression. \textit{JOSA B} \textbf{27}, 2180 (2010).
+% \bibitem{bib:n16} Bache, M. et al. Limits to compression with cascaded quadratic soliton compressors. \textit{Optics express} \textbf{16}, 3273 (2008).
+% \bibitem{bib:n17} Moses, J., Wise, F. W. Soliton compression in quadratic media: high-energy few-cycle pulses with a frequency-doubling crystal. \textit{Optics letters} \textbf{31}, 1881 (2006).
+% \bibitem{bib:n18} \v{S}uminas. R. et al. Spatiotemporal light bullets and supercontinuum generation in $\beta$-BBO crystal with competing quadratic and cubic nonlinearities \textit{Optics letters} \textbf{41}, 2097 (2016).
+% \bibitem{bib:n19} Conti, C., et al. Effective lensing effects in parametric frequency conversion. \textit{JOSA B} \textbf{19},  852 (2002).
+% \bibitem{bib:n20} Trofimov, V. A., Lysak T. M. Strong self-focusing of axial symmetric laser beam due to quadratic nonlinearity. \textit{JOSA B} \textbf{29}, 1731 (2012).
+% \bibitem{bib:n21} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part I. Efficient generation in optical fibers. \textit{Computational Mathematics and Modeling} \textbf{19}, 333 (2008).
+% \bibitem{bib:n22} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part II. Suppression of intensity fluctuations in a quadratic-nonlinearity medium \textit{Computational Mathematics and Modeling} \textbf{20}, 1 (2009).
+% \bibitem{bib:n23a} Lysak, T. M., Trofimov, V. A. Achieving high-efficiency second harmonic generation in a sequence of laser pulses with random peak intensity. Part III. Propagation of pulses in a bulk medium. \textit{Computational Mathematics and Modeling} \textbf{20}, 101 (2009).
+% \bibitem{bib:n23} Lysak, T. M., Trofimov, V. A. Highly efficient SHG of a sequence of laser pulses with a random peak intensity and duration. \textit{Optics and Spectroscopy} \textbf{107}, 399 (2009).
+% \bibitem{bib:n24} Nayfeh, A.H. Introduction to perturbation techniques.\textit{New York: John Wiley \&Sons} (1993) 519p.
+% \bibitem{bib:t4a} Seka, W., Jacobs, S. D., Rizzo, J. E., Boni, R., Craxton, R. S. Demonstration of high efficiency third harmonic conversion of high power Nd-glass laser radiation. Optics Communications, \textbf{34}, 469 (1980).
+% \bibitem{bib:t4} Craxton, R. S. Theory of high efficiency third harmonic generation of high power Nd-glass laser radiation. \textit{Optics Communications} \textbf{34}, 474 (1980).
+% \bibitem{bib:t2} Zhu, S. N., Zhu, Y. Y., Ming, N. B. Quasi-phase-matched third-harmonic generation in a quasi-periodic optical superlattice. \textit{Science} \textbf{278}, 843 (1997)
+% \bibitem{bib:t3} Qi, H. et al. Cascaded third-harmonic generation with one KDP crystal. \textit{Optics letters} \textbf{41} 5823 (2016).
+% \bibitem{bib:t1} Banks, P. S., Feit, M. D., Perry, M. D. High-intensity third-harmonic generation. \textit{JOSA B} \textbf{19}, 102 (2002).
+% \bibitem{bib:t5} Zhang, Tiejun, Yoshiaki Kato, and Hiroyuki Daido. "Efficient third-harmonic generation of a picosecond laser pulse with time delay." IEEE journal of quantum electronics 32.1 (1996): 127-136.
+% \bibitem{bib:n26} Zernike, F.  Refractive Indices of Ammonium Dihydrogen Phosphate and Potassium Dihydrogen Phosphate between 2000 $\hat{A}$ and $1.5\mu$. \textit{JOSA} \textbf{54}, 1215 (1964).
+% \bibitem{bib:c4} Eckardt, R. C., et al. Absolute and relative nonlinear optical coefficients of KDP, KD*P, $\hbox{BaB}_2\hbox{O}_4, \hbox{LiIO}_3, \hbox{MgO: LiNbO}_3$ and KTP measured by phase-matched second-harmonic generation. \textit{IEEE Journal of Quantum Electronics} \textbf{26}, 922 (1990).
+% \bibitem{bib:c1} Tamo\v{s}auskas, G. et al. Transmittance and phase matching of BBO crystal in the \(3 -- 5 \mu m\) range and its application for the characterization of mid-infrared laser pulses. \textit{Optical Materials Express} \textbf{8}, 1410 (2018).
+% \bibitem{bib:c2} Chen, C. et al. Improved Sellmeier Equations and Phase-Matching Characteristics in Deep-Ultraviolet Region of ${\hbox {KBe}} _ {2}{\hbox {BO}} _ {3}{\hbox {F}} _ {2} $ Crystal. \textit{IEEE Journal of Quantum Electronics} \textbf{44}, 617 (2008).
+% \bibitem{bib:c5} Chen, C., et al. The vacuum ultraviolet phase-matching characteristics of nonlinear optical ${\hbox {KBe}} _ {2}{\hbox {BO}} _ {3}{\hbox {F}} _ {2} $. \textit{Applied physics letters} \textbf{68}, 2930 (1996).
+% \bibitem{bib:c3} Chen, C. et al. Deep UV nonlinear optical crystal: $\hbox{RbBe}_2(\hbox{BO}_3)\hbox{F}_2$. \textit{JOSA B} \textbf{26}, 1519 (2009).
+% \bibitem{bib:gan} Ganeev, R. A., et al. "Characterization of nonlinear optical parameters of KDP, LiNbO3 and BBO crystals." \textit{Optics communications} \textbf{229}, 403 (2004).
+% \bibitem{bib:tilt1} Martinez, O. E., Gordon, J. P., Fork, R. L. Negative group-velocity dispersion using refraction \textit{JOSA A}, \textbf{1} 1003 (1984).
+% \bibitem{bib:tilt2} Martinez, O. E. Grating and prism compressors in the case of finite beam size. \textit{JOSA B} \text{3}, 929 (1986).
+% \bibitem{bib:np} http://www.numpy.org
+% \end{thebibliography}
 
 \end{document} 
